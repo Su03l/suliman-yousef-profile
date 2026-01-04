@@ -436,8 +436,8 @@ export const LARAVEL_COLLECTION_ITEMS = [
         id: "04",
         name: "Mini_Store_API",
         desc: {
-            en: "E-commerce platform with product management, order processing, and automatic inventory tracking",
-            ar: "منصة تجارة إلكترونية مع إدارة المنتجات ومعالجة الطلبات وتتبع المخزون."
+            en: "A RESTful API for a simple e-commerce system managing products and orders, built with Laravel. Features advanced many-to-many relationships and automatic inventory management.\n\nFeatures:\n• Product Management: Full CRUD operations with stock tracking.\n• Order Processing: Handle orders with multiple products and quantities.\n• Inventory Management: Automatic stock deduction on order, restoration on cancellation, and stock-out prevention.\n• Automatic Logic: Unique order number generation.\n• Validation: Strict input and availability checks.\n• Database Transactions: Ensuring data integrity during critical operations.",
+            ar: "واجهة برمجة تطبيقات RESTful لنظام تجارة إلكترونية بسيط يدير المنتجات والطلبات، مبنية باستخدام Laravel. تتميز بعلاقات متقدمة وإدارة تلقائية للمخزون.\n\nالمميزات:\n• إدارة المنتجات: عمليات CRUD كاملة مع تتبع المخزون.\n• معالجة الطلبات: إنشاء طلبات بمنتجات وكميات متعددة.\n• إدارة المخزون: خصم واستعادة تلقائية للمخزون، ومنع الطلب عند النقص.\n• منطق تلقائي: توليد تلقائي لأرقام طلبات فريدة.\n• التحقق من الصحة: تحقق صارم من المدخلات وتوفر المخزون.\n• معاملات قاعدة البيانات: ضمان سلامة البيانات أثناء العمليات الحساسة."
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/Mini_Store_API",
         icon: "fa-shopping-cart"
