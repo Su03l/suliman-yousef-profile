@@ -32,34 +32,76 @@ export const CERTIFICATIONS: Certification[] = [
         description: { en: "Web app development course with assessments and updated browser skills.", ar: "دورة تطوير تطبيقات الويب مع التقييمات ومهارات المتصفح الحديثة." }
     },
     {
-        title: { en: "Full Stack Web Developer", ar: "مطور ويب متكامل" },
-        issuer: { en: "Satar", ar: "سطر" },
+        title: { en: "Full Stack Web Developer", ar: "مطور ويب متكامل (Full Stack)" },
+        issuer: { en: "Satr", ar: "منصة سطر" },
         year: "2024",
-        description: { en: "HTML, CSS, JavaScript, Git, Node.js, Express, DOM, Bootstrap, MongoDB, API, React.", ar: "دورة شاملة تغطي الواجهات الأمامية والخلفية وقواعد البيانات." }
+        description: { en: "HTML, CSS, JavaScript, Git, Node.js, Express, DOM, Bootstrap, MongoDB, API, React.", ar: "دورة شاملة تغطي تقنيات الواجهات الأمامية والخلفية وقواعد البيانات." }
     },
     {
         title: { en: "CSS (Basic)", ar: "أساسيات CSS" },
         issuer: { en: "HackerRank", ar: "هاكر رانك" },
         year: "2025",
-        description: { en: "Covers cascading, inheritance, text styling, layouts, and box model.", ar: "تغطي الوراثة، تنسيق النصوص، التخطيطات، ونموذج الصندوق." }
+        description: { en: "Cascading and Inheritance, text styling, layouts, and box model.", ar: "تغطي الوراثة، تنسيق النصوص، التخطيطات، ونموذج الصندوق." }
     },
     {
         title: { en: "Flutter App Developer (Full Course)", ar: "مطور تطبيقات فلاتر (دورة كاملة)" },
-        issuer: { en: "Satar", ar: "سطر" },
+        issuer: { en: "Satr", ar: "منصة سطر" },
         year: "2024",
-        description: { en: "Dart, Flutter 101-105.", ar: "تعلم تطوير تطبيقات الموبايل باستخدام Dart و Flutter." }
+        description: { en: "Comprehensive course on mobile development using Dart and Flutter (101-105).", ar: "تعلم تطوير تطبيقات الموبايل باستخدام Dart و Flutter من الأساسيات للمتقدم." }
     },
     {
         title: { en: "Android App Developer (Full Course)", ar: "مطور تطبيقات أندرويد (دورة كاملة)" },
-        issuer: { en: "Satar", ar: "سطر" },
+        issuer: { en: "Satr", ar: "منصة سطر" },
         year: "2022",
-        description: { en: "Kotlin, Jetpack Compose, Android Firebase, SQL.", ar: "تطوير تطبيقات أندرويد باستخدام كوتلن وفايربيز." }
+        description: { en: "Kotlin, Jetpack Compose, Android Firebase, SQL.", ar: "تطوير تطبيقات أندرويد باستخدام كوتلن وفايربيز وتقنيات Jetpack Compose." }
     },
     {
         title: { en: "Data Analysis Course", ar: "دورة تحليل البيانات" },
-        issuer: { en: "Satar", ar: "سطر" },
+        issuer: { en: "Satr", ar: "منصة سطر" },
         year: "2025",
-        description: { en: "SQL, Python, NumPy, Pandas, Power BI.", ar: "أساسيات تحليل البيانات واستخدام الأدوات الإحصائية." }
+        description: { en: "SQL, Python, NumPy, Pandas, Power BI.", ar: "أساسيات تحليل البيانات واستخدام بايثون و SQL وأدوات التصور." }
+    },
+    {
+        title: { en: "Web Development Fundamentals", ar: "أساسيات تطوير الويب" },
+        issuer: { en: "IBM", ar: "آي بي إم" },
+        year: "2025",
+        description: { en: "HTML, CSS, JavaScript, web basics, and deployment.", ar: "المبادئ الأساسية للويب، HTML، CSS، وجافا سكريبت مع النشر." }
+    },
+    {
+        title: { en: "UI/UX Designer Using Figma", ar: "مصمم واجهات (UI/UX) باستخدام فيجما" },
+        issuer: { en: "Satr", ar: "منصة سطر" },
+        year: "2025",
+        description: { en: "UI/UX design principles using Figma.", ar: "مبادئ تصميم وتجربة المستخدم والتطبيق العملي باستخدام فيجما." }
+    },
+    {
+        title: { en: "Artificial Intelligence Fundamentals", ar: "أساسيات الذكاء الاصطناعي" },
+        issuer: { en: "IBM", ar: "آي بي إم" },
+        year: "2025",
+        description: { en: "AI concepts, machine learning, deep learning, NLP, computer vision, and AI ethics.", ar: "مفاهيم الذكاء الاصطناعي، تعلم الآلة، المعالجة اللغوية، وأخلاقيات الذكاء الاصطناعي." }
+    },
+    {
+        title: { en: "Agile Explorers", ar: "مستكشفو أجايل (Agile)" },
+        issuer: { en: "IBM", ar: "آي بي إم" },
+        year: "2025",
+        description: { en: "Foundational knowledge of Agile principles with practical application.", ar: "المعرفة التأسيسية لمبادئ أجايل مع التطبيق العملي." }
+    },
+    {
+        title: { en: "JavaScript (Basic)", ar: "جافا سكريبت (مستوى مبتدئ)" },
+        issuer: { en: "HackerRank", ar: "هاكر رانك" },
+        year: "2025",
+        description: { en: "Functions, currying, hoisting, scope, inheritance, events and error handling.", ar: "الدوال، الوراثة، النطاق، ومعالجة الأخطاء في جافا سكريبت." }
+    },
+    {
+        title: { en: "JavaScript (Intermediate)", ar: "جافا سكريبت (مستوى متوسط)" },
+        issuer: { en: "HackerRank", ar: "هاكر رانك" },
+        year: "2025",
+        description: { en: "Design Patterns, Memory management, concurrency model, and event loops.", ar: "أنماط التصميم، إدارة الذاكرة، التزامن، وحدث اللوب (Event Loops)." }
+    },
+    {
+        title: { en: "Frontend Developer (React)", ar: "مطور واجهات أمامية (React)" },
+        issuer: { en: "HackerRank", ar: "هاكر رانك" },
+        year: "2025",
+        description: { en: "Build interactive and responsive web applications using React, CSS, and JS.", ar: "بناء تطبيقات ويب تفاعلية ومستجيبة باستخدام ريـاكت." }
     }
 ];
 
