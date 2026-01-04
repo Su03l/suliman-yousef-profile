@@ -68,9 +68,9 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, lang, onClose }) =
                             const isBullet = line.trim().startsWith('•') || line.trim().startsWith('-');
                             if (isBullet) {
                                 return (
-                                    <div key={idx} className="flex gap-4 mb-3 group/line items-start">
-                                        <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 shrink-0 group-hover/line:scale-125 transition-transform shadow-[0_0_100px_rgba(59,130,246,0.5)]" />
-                                        <span className="flex-1">{line.replace(/^[•-]\s*/, '')}</span>
+                                    <div key={idx} className="flex gap-2 mb-3 group/line items-start text-start">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 shrink-0 group-hover/line:scale-125 transition-transform shadow-[0_0_10px_rgba(59,130,246,0.5)]" />
+                                        <span>{line.replace(/^[•-]\s*/, '')}</span>
                                     </div>
                                 );
                             }
