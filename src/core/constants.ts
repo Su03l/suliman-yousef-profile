@@ -446,8 +446,8 @@ export const LARAVEL_COLLECTION_ITEMS = [
         id: "05",
         name: "Car_Rental_API",
         desc: {
-            en: "Vehicle rental management with fleet tracking, customer management, and automated billing",
-            ar: "إدارة تأجير السيارات مع تتبع الأسطول وإدارة العملاء والفوترة التلقائية."
+            en: "A robust RESTful API for managing car rental businesses, built with Laravel. Features automatic cost calculation, strict vehicle status management, and transactional data integrity.\n\nKey Features:\n• Fleet Management: Full CRUD operations for cars with status tracking (Available, Rented, Maintenance).\n• Customer Management: Manage customer profiles with unique ID verification.\n• Rental Logic:\n  - Automatic Billing: Calculates total cost based on duration and daily rate.\n  - Status Management: Automatic switching to 'Rented' on booking and 'Available' on return.\n  - Conflict Prevention: Prevents booking of rented or unavailable vehicles.\n• Database Transactions: Ensures consistency across all operations.",
+            ar: "واجهة برمجة تطبيقات RESTful قوية لإدارة أعمال تأجير السيارات، مبنية باستخدام Laravel. تتميز بحساب تلقائي للتكاليف، وإدارة صارمة لحالة المركبات.\n\nالمميزات الرئيسية:\n• إدارة الأسطول: عمليات CRUD كاملة للسيارات مع تتبع الحالة (متاح، مؤجر، صيانة).\n• إدارة العملاء: إدارة ملفات العملاء مع فحص الهوية الفريدة.\n• منطق التأجير:\n  - الفوترة التلقائية: حساب تلقائي للتكلفة بناءً على المدة والسعر اليومي.\n  - إدارة الحالة: تبديل تلقائي لحالة السيارة عند الحجز والإرجاع.\n  - منع التعارضات: منع حجز المركبات المؤجرة حالياً أو غير المتاحة.\n• معاملات قاعدة البيانات: ضمان اتساق البيانات عبر جميع العمليات."
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/Car_Rental_API",
         icon: "fa-car"
@@ -466,8 +466,8 @@ export const LARAVEL_COLLECTION_ITEMS = [
         id: "07",
         name: "Todo-App",
         desc: {
-            en: "Task management system with user authentication using Laravel Sanctum and profile management",
-            ar: "نظام إدارة مهام مع مصادقة المستخدم باستخدام Laravel Sanctum."
+            en: "The Backend API for a Todo List application, built with Laravel. It provides a RESTful interface for user authentication and task management. The API utilizes Laravel Sanctum for cookie-based authentication specifically designed for Single Page Applications (SPA).",
+            ar: "هذا هو الواجهة الخلفية (Backend API) لتطبيق قائمة المهام، مبني باستخدام Laravel. يوفر واجهة RESTful لمصادقة المستخدمين وإدارة المهام. يستخدم API نظام Laravel Sanctum للمصادقة المستندة إلى الكوكيز للتطبيقات أحادية الصفحة (SPA)."
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/todo-app",
         icon: "fa-tasks"
