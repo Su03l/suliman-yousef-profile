@@ -476,8 +476,8 @@ export const LARAVEL_COLLECTION_ITEMS = [
         id: "08",
         name: "Project Manager API",
         desc: {
-            en: "Project management with polymorphic notes/files, file uploads with auto-cleanup, and unified API endpoints",
-            ar: "إدارة المشاريع مع ملاحظات وملفات متعددة الأشكال ورفع الملفات مع تنظيف تلقائي."
+            en: "A flexible project management system built with Laravel. This project showcases advanced concepts like Polymorphic Relationships to dynamically link notes and files to multiple models (projects and tasks), along with professional file upload and storage management.\n\nKey Features:\n• Project & Task Management: Create projects and assign multiple tasks with progress tracking.\n• Smart Notes (Polymorphic): Add notes to either projects or tasks using a single unified table.\n• Attachments (File Uploads): Upload images/PDFs with full URL retrieval and clean physical file deletion on record removal.\n• Unified Endpoints: Intelligent controller handling requests based on entity type.",
+            ar: "نظام مرن لإدارة المشاريع مبني باستخدام Laravel. يستعرض هذا المشروع مفاهيم متقدمة مثل العلاقات متعددة الأشكال (Polymorphic Relationships) لربط الملاحظات والملفات بأكثر من مودل ديناميكياً.\n\nالمميزات الرئيسية:\n• إدارة المشاريع والمهام: إنشاء مشاريع وإسناد مهام مع تتبع الإنجاز.\n• ملاحظات ذكية (Polymorphic): إضافة ملاحظات للمشاريع أو المهام باستخدام جدول موحد.\n• المرفقات (رفع الملفات): رفع الصور وملفات PDF مع استرجاع الرابط الكامل والحذف التلقائي للملفات من السيرفر.\n• نقاط وصول موحدة: كنترولر ذكي يتعامل مع الطلبات بناءً على النوع."
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/Project_Manager",
         icon: "fa-project-diagram"
