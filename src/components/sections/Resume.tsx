@@ -1,15 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Language, Translation } from '../../core/types';
+import { Language, Translation, Theme } from '../../core/types';
 import { EXPERIENCES, CERTIFICATIONS } from '../../core/constants';
 
 interface ResumeProps {
     lang: Language;
     t: Translation;
+    theme: Theme;
 }
 
-const Resume: React.FC<ResumeProps> = ({ lang, t }) => {
-    const isDark = document.documentElement.classList.contains('dark');
+const Resume: React.FC<ResumeProps> = ({ lang, t, theme }) => {
+    const isDark = theme === 'dark';
 
     return (
         <section id="resume" className="py-40 bg-white/[0.01]">
@@ -83,7 +84,7 @@ const Resume: React.FC<ResumeProps> = ({ lang, t }) => {
                                     zIndex: i + 10
                                 }}
                             >
-                                <div className={`p-10 md:p-14 rounded-[3.5rem] border ${isDark ? 'border-white/10 bg-[#0a0f1e]' : 'border-black/5 bg-white'} backdrop-blur-3xl shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] group relative overflow-hidden flex flex-col md:flex-row gap-10 items-center`}>
+                                <div className={`p-10 md:p-14 rounded-[3.5rem] border ${isDark ? 'border-white/10 bg-[#0a0f1e]' : 'border-blue-600/5 bg-white'} backdrop-blur-3xl ${isDark ? 'shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)]' : 'shadow-[0_40px_80px_-15px_rgba(0,0,0,0.05)]'} group relative overflow-hidden flex flex-col md:flex-row gap-10 items-center`}>
                                     <div className="absolute -right-20 -top-20 w-80 h-80 bg-blue-600/5 blur-[100px] rounded-full group-hover:bg-blue-600/10 transition-colors"></div>
 
                                     <div className="flex-shrink-0 relative z-10">

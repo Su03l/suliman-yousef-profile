@@ -84,7 +84,7 @@ const AppContent: React.FC = () => {
         <>
             <Hero lang={lang} t={t} />
             <About t={t} />
-            <Resume lang={lang} t={t} />
+            <Resume lang={lang} t={t} theme={theme} />
             <Services lang={lang} />
             <Projects
                 lang={lang}
@@ -108,7 +108,7 @@ const AppContent: React.FC = () => {
             <Routes>
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/about" element={<About t={t} />} />
-                <Route path="/resume" element={<Resume lang={lang} t={t} />} />
+                <Route path="/resume" element={<Resume lang={lang} t={t} theme={theme} />} />
                 <Route path="/services" element={<Services lang={lang} />} />
                 <Route path="/projects" element={
                     <Projects
