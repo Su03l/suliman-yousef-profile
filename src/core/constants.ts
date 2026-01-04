@@ -489,10 +489,10 @@ export const LARAVEL_COLLECTION_ITEMS = [
         url: "https://github.com/Su03l/Laravel-projects/tree/main/Project_Manager",
         icon: "fa-project-diagram",
         tech: [
-            "Laravel: إطار العمل الأساسي.",
-            "Polymorphic Relations: استخدام morphTo و morphMany.",
-            "Storage Facade: للتعامل مع رفع وحذف الملفات في الـ public disk.",
-            "API Resources: لتنسيق ردود الـ JSON وإضافة روابط الصور."
+            "Laravel",
+            "Polymorphic Relations",
+            "Storage Facade",
+            "API Resources"
         ]
     },
     {
