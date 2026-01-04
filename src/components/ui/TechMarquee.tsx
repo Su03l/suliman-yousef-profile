@@ -7,7 +7,7 @@ const TechMarquee: React.FC = () => {
         <div className="relative w-full overflow-hidden bg-blue-600/5 py-12 border-y border-white/5 group">
             <motion.div
                 animate={{ x: [0, -2400] }}
-                transition={{ repeat: Infinity, duration: 60, ease: "linear" }}
+                transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
                 className="flex whitespace-nowrap items-center gap-24"
             >
                 {[...TECH_STACK, ...TECH_STACK, ...TECH_STACK].map((item, i) => (

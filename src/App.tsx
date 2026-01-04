@@ -28,7 +28,13 @@ import Contact from './components/sections/Contact';
 
 const AppContent: React.FC = () => {
     const [lang, setLang] = useState<Language>('en');
-    const [theme, setTheme] = useState<Theme>('dark');
+    const [theme, setTheme] = useState<Theme>(() => {
+        return (localStorage.getItem('theme') as Theme) || 'dark';
+    });
+
+    useEffect(() => {
+        localStorage.setItem('theme', theme);
+    }, [theme]);
     const [filter, setFilter] = useState<'all' | 'frontend' | 'backend' | 'fullstack'>('all');
     const [showAll, setShowAll] = useState(false);
     const [scrolled, setScrolled] = useState(false);
