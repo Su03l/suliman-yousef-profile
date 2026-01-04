@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://suliman-yousef.vercel.app/sitemap.xml
