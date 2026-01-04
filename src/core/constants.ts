@@ -426,8 +426,8 @@ export const LARAVEL_COLLECTION_ITEMS = [
         id: "03",
         name: "UniversitySystem",
         desc: {
-            en: "Academic system managing students, courses, enrollment, and course registration",
-            ar: "نظام أكاديمي لإدارة الطلاب والمقررات والتسجيل الأكاديمي."
+            en: "A simple RESTful API for managing university operations including students and courses, built with Laravel.\n\nFeatures:\n• CRUD Operations: Create, Read, Update, and Delete students and courses.\n• Course Management: Manage academic courses with full CRUD capabilities.\n• Student Management: Handle student records and course enrollments.\n• Course Registration: Register students for courses and manage enrollments.\n• Validation: Robust input validation (required fields, data integrity).\n• API Resources: Utilizing Laravel API Resources for consistent JSON responses.",
+            ar: "واجهة برمجة تطبيقات RESTful بسيطة لإدارة عمليات الجامعة بما في ذلك الطلاب والمواد الدراسية، مبنية باستخدام Laravel.\n\nالمميزات:\n• عمليات CRUD: إنشاء، قراء، تحديث، وحذف الطلاب والمواد الدراسية.\n• إدارة المواد: إدارة المواد الدراسية بإمكانيات CRUD كاملة.\n• إدارة الطلاب: إدارة سجلات الطلاب مع التسجيل في المواد.\n• تسجيل المواد: تسجيل الطلاب في المواد وإدارة الالتحاقات.\n• التحقق من الصحة: تحقق قوي من صحة البيانات المدخلة (مثل الحقول المطلوبة، سلامة البيانات).\n• موارد API: استخدام موارد Laravel API للحصول على استجابات JSON متسقة."
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/UniversitySystem",
         icon: "fa-graduation-cap"
