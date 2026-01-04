@@ -63,44 +63,62 @@ const Resume: React.FC<ResumeProps> = ({ lang, t }) => {
                     </motion.div>
                 </div>
 
-                {/* Certifications Section - Continuous Scroll */}
-                <div className="mt-32 overflow-hidden">
-                    <h2 className="text-3xl font-black tracking-tighter mb-12 flex items-center gap-4 px-6">
+                {/* Certifications Section - Sticky Stacking Cards */}
+                <div className="mt-40">
+                    <h2 className="text-3xl font-black tracking-tighter mb-20 flex items-center gap-4 px-6 justify-center">
                         <span className="w-10 h-1 bg-blue-600"></span> {t.certificationTitle.toUpperCase()}
                     </h2>
 
-                    <div className="relative group">
-                        {/* Gradient Overlays for smooth edges - Theme Responsive */}
-                        <div className={`absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r ${isDark ? 'from-[#020617]' : 'from-[#f8fafc]'} to-transparent z-10 pointer-events-none`}></div>
-                        <div className={`absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l ${isDark ? 'from-[#020617]' : 'from-[#f8fafc]'} to-transparent z-10 pointer-events-none`}></div>
+                    <div className="flex flex-col items-center gap-20 pb-40">
+                        {CERTIFICATIONS.map((cert, i) => (
+                            <motion.div
+                                key={i}
+                                initial={{ opacity: 0, y: 100, scale: 0.95 }}
+                                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                                viewport={{ once: false, margin: "-100px" }}
+                                transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+                                className="sticky w-full max-w-5xl px-6"
+                                style={{
+                                    top: `${140 + (i * 10)}px`,
+                                    zIndex: i + 10
+                                }}
+                            >
+                                <div className={`glass p-10 md:p-14 rounded-[3.5rem] border ${isDark ? 'border-white/5 bg-slate-950/80' : 'border-black/5 bg-white/80'} backdrop-blur-3xl shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] group relative overflow-hidden flex flex-col md:flex-row gap-10 items-center`}>
+                                    <div className="absolute -right-20 -top-20 w-80 h-80 bg-blue-600/5 blur-[100px] rounded-full group-hover:bg-blue-600/10 transition-colors"></div>
 
-                        <div className="flex gap-6 animate-cert-marquee hover:[animation-play-state:paused] py-10">
-                            {[...CERTIFICATIONS, ...CERTIFICATIONS].map((cert, i) => (
-                                <div
-                                    key={i}
-                                    className="flex-shrink-0 w-[400px] glass p-8 rounded-[2.5rem] border border-white/5 hover:border-blue-500/30 transition-all duration-500 group relative overflow-hidden flex flex-col justify-between"
-                                >
-                                    <div className="absolute -right-4 -top-4 w-24 h-24 bg-blue-600/5 blur-2xl rounded-full group-hover:bg-blue-600/10 transition-colors"></div>
-
-                                    <div className="flex justify-between items-start mb-6">
-                                        <div className="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center text-blue-500 group-hover:bg-blue-600 group-hover:text-white transition-all duration-500">
-                                            <i className="fas fa-medal text-xl"></i>
+                                    <div className="flex-shrink-0">
+                                        <div className="w-24 h-24 bg-blue-600 rounded-3xl flex items-center justify-center text-white shadow-2xl shadow-blue-500/20 rotate-3 group-hover:rotate-0 transition-transform duration-500">
+                                            <i className="fas fa-medal text-4xl"></i>
                                         </div>
-                                        <span className="text-[10px] font-black tracking-[0.2em] text-blue-500/60 uppercase">{cert.year}</span>
                                     </div>
 
-                                    <h4 className="text-xl font-black mb-2 tracking-tight group-hover:text-blue-500 transition-colors uppercase italic leading-tight">
-                                        {cert.title[lang]}
-                                    </h4>
-                                    <p className="text-blue-400/80 text-xs font-bold mb-4 uppercase tracking-widest italic tracking-tighter">
-                                        {cert.issuer[lang]}
-                                    </p>
-                                    <p className="text-slate-400 text-sm leading-relaxed opacity-70 group-hover:opacity-100 transition-opacity line-clamp-3">
-                                        {cert.description[lang]}
-                                    </p>
+                                    <div className="flex-1 text-center md:text-left">
+                                        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                                            <div>
+                                                <span className="inline-block px-4 py-1.5 bg-blue-600/10 text-blue-500 font-black tracking-[0.3em] mb-4 text-[10px] uppercase rounded-full border border-blue-600/20">
+                                                    {cert.year}
+                                                </span>
+                                                <h4 className="text-3xl md:text-4xl font-black tracking-tight group-hover:text-blue-500 transition-colors uppercase italic leading-tight">
+                                                    {cert.title[lang]}
+                                                </h4>
+                                            </div>
+                                            <p className="text-blue-400 font-black text-sm uppercase tracking-[0.3em] italic">
+                                                {cert.issuer[lang]}
+                                            </p>
+                                        </div>
+
+                                        <p className={`text-lg leading-relaxed ${isDark ? 'text-slate-400' : 'text-slate-600'} font-medium group-hover:text-current transition-colors`}>
+                                            {cert.description[lang]}
+                                        </p>
+                                    </div>
+
+                                    {/* Decorative background number */}
+                                    <span className="absolute bottom-6 right-10 text-8xl font-black opacity-[0.03] select-none italic">
+                                        {String(i + 1).padStart(2, '0')}
+                                    </span>
                                 </div>
-                            ))}
-                        </div>
+                            </motion.div>
+                        ))}
                     </div>
                 </div>
             </div>
