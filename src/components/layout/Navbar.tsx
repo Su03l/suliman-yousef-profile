@@ -14,7 +14,7 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ lang, setLang, theme, setTheme, scrolled }) => {
     const t = translations[lang];
     return (
-        <nav className={`fixed top-0 left-0 w-full z-[99999] px-6 md:px-12 py-3 transition-all duration-500 flex justify-between items-center ${theme === 'dark' ? 'bg-black/90 text-white' : 'bg-white/90 text-slate-900'} backdrop-blur-xl border-b border-white/10 shadow-2xl shadow-black/50`}>
+        <nav className={`fixed top-0 left-0 w-full z-[99999] px-6 md:px-12 py-4 transition-all duration-500 flex justify-between items-center ${theme === 'dark' ? 'bg-white/[0.03] text-white border-white/5' : 'bg-white/60 text-slate-900 border-slate-200'} backdrop-blur-2xl border-b shadow-2xl shadow-black/10`}>
             <div className="flex items-center gap-4">
                 <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center font-black text-xl text-white shadow-2xl shadow-blue-500/30">SY</div>
                 <span className="font-black text-lg tracking-tighter hidden md:block">Suliman Yousef</span>
