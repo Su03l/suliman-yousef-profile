@@ -496,8 +496,8 @@ export const LARAVEL_COLLECTION_ITEMS = [
         id: "10",
         name: "HR_Reports_API",
         desc: {
-            en: "Specialized API system for managing employee records with focus on report generation and data export. Enables managers to filter employees and download results as Excel/CSV using streaming technology",
-            ar: "نظام متخصص لإدارة سجلات الموظفين مع التركيز على توليد التقارير وتصدير البيانات."
+            en: "A specialized API system for managing employee records, focusing on report generation and data export. It enables managers to filter employees based on precise criteria and download results as Excel/CSV files using Streaming technology.\n\nKey Features:\n• Data Export (CSV Export): Download employee reports with a single click after filtering.\n• High Performance (Streamed Response): Using Streaming technology for large file exports without memory overhead.\n• Financial & Temporal Filtering: Search by salary range or hiring year.\n• Auto-Documentation: Utilizing FormRequest for tools like Scramble.\n• Separation of Concerns: Dedicated endpoints for search (/search) and export (/export).",
+            ar: "نظام API متخصص لإدارة سجلات الموظفين، يركز بشكل أساسي على توليد التقارير وتصدير البيانات عبر تقنية الـ Streaming.\n\nأبرز المميزات:\n• تصدير البيانات (CSV Export): تحميل تقارير الموظفين بضغطة زر مع دعم الفلترة.\n• أداء عالي (Streamed Response): استخدام تقنية الـ Streaming لتصدير الملفات الضخمة دون استهلاك الذاكرة.\n• فلترة مالية وزمنية: البحث عن الموظفين حسب نطاق الراتب أو سنة التعيين.\n• توثيق تلقائي: استخدام FormRequest لدعم أدوات التوثيق.\n• فصل المهام: تخصيص Endpoints مستقلة للبحث (/search) والتصدير (/export)."
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/HR_Reports_API",
         icon: "fa-chart-line"
@@ -506,8 +506,8 @@ export const LARAVEL_COLLECTION_ITEMS = [
         id: "11",
         name: "Secure Notes API",
         desc: {
-            en: "Secure note-taking system with Laravel Sanctum authentication and full data privacy. Features user authentication, ownership-based access control, and secure search ensuring each user can only access their own notes",
-            ar: "نظام تدوين ملاحظات آمن مع خصوصية كاملة للبيانات ومصادقة Sanctum."
+            en: "A secure API system for managing personal notes. The project relies on Laravel Sanctum for authentication and data protection, ensuring each user can only access their own private data (Data Privacy).\n\nKey Features:\n• Full Authentication System: Login, registration, and logout using API Tokens.\n• Data Ownership: Users cannot view, edit, or delete notes they don't own (Scoped Queries).\n• Secure Search: Intelligent search engine that prevents data overlap between users.\n• Authorization: Protection of user profile update routes.",
+            ar: "نظام واجهة برمجية (API) آمن ومتكامل لإدارة الملاحظات الشخصية. يعتمد على Laravel Sanctum للمصادقة وحماية البيانات بخصوصية كاملة.\n\nأبرز المميزات:\n• نظام مصادقة متكامل: تسجيل دخول، تسجيل جديد، وخروج باستخدام الـ Tokens.\n• حماية ملكية البيانات (Data Ownership): منع الوصول لأي مذكرات لا يملكها المستخدم.\n• بحث آمن (Secure Search): محرك بحث ذكي يضمن خصوصية البيانات لكل مستخدم.\n• حماية الصلاحيات: تأمين مسارات تعديل البيانات الحساسة."
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/Secure_Notes_API",
         icon: "fa-lock"
