@@ -39,16 +39,22 @@ const Hero: React.FC<HeroProps> = ({ lang, t }) => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
-                    <NavLink to="/projects">
-                        <motion.button
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="px-12 py-5 bg-blue-600 text-white rounded-2xl font-black text-lg shadow-[0_25px_50px_-12px_rgba(59,130,246,0.5)] hover:bg-blue-700 transition-all flex items-center gap-3 group"
-                        >
-                            {t.heroBtnWork}
-                            <i className="fas fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
-                        </motion.button>
-                    </NavLink>
+                    <div className="flex flex-col sm:flex-row items-center gap-6">
+                        <NavLink to="/projects">
+                            <motion.button
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                                className="px-10 py-5 bg-blue-600 text-white rounded-2xl font-black text-lg shadow-[0_25px_50px_-12px_rgba(59,130,246,0.5)] hover:bg-blue-700 transition-all flex items-center gap-3 group"
+                            >
+                                {t.heroBtnWork}
+                                <i className="fas fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
+                            </motion.button>
+                        </NavLink>
+                        <a href="/SULIMANYOUSEF.pdf" download className="px-10 py-5 glass border border-white/10 text-white rounded-2xl font-black text-lg hover:bg-white/5 hover:border-blue-500/30 hover:scale-105 transition-all flex items-center gap-3 group">
+                            <i className="fas fa-download group-hover:-translate-y-1 transition-transform"></i>
+                            Download CV
+                        </a>
+                    </div>
                     <div className="flex gap-8 text-3xl opacity-30 hover:opacity-100 transition-opacity">
                         <a href="https://github.com/Su03l" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-all"><i className="fab fa-github"></i></a>
                         <a href="https://linkedin.com/in/suliaman-yousef-36265a320" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-all"><i className="fab fa-linkedin"></i></a>
