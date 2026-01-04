@@ -22,9 +22,9 @@ const About: React.FC<AboutProps> = ({ t }) => {
                         { val: "30+", label: t.statsProjects },
                         { val: "10+", label: t.statsTechs }
                     ].map((stat, i) => (
-                        <div key={i} className="glass py-8 px-6 md:px-12 rounded-[2.5rem] border-white/5 text-center min-w-[120px] md:min-w-[180px]">
-                            <span className="text-4xl md:text-5xl font-black text-blue-600 block mb-2">{stat.val}</span>
-                            <span className="text-[10px] font-black uppercase tracking-widest opacity-40">{stat.label}</span>
+                        <div key={i} className="glass py-8 px-6 md:px-12 rounded-[2.5rem] border border-white/5 text-center min-w-[120px] md:min-w-[180px] hover:border-blue-500/30 hover:shadow-2xl hover:shadow-blue-500/10 hover:scale-105 transition-all duration-500 group cursor-default">
+                            <span className="text-4xl md:text-5xl font-black text-blue-600 block mb-2 group-hover:scale-110 transition-transform duration-500">{stat.val}</span>
+                            <span className="text-[10px] font-black uppercase tracking-widest opacity-40 group-hover:opacity-100 group-hover:text-blue-400 transition-all duration-500">{stat.label}</span>
                         </div>
                     ))}
                 </div>
