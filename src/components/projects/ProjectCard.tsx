@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Project, Language } from '../../core/types';
+import { Project, Language, Theme } from '../../core/types';
 import { translations } from '../../core/translations';
 import { LARAVEL_COLLECTION_ITEMS } from '../../core/constants';
 
@@ -8,9 +8,11 @@ interface ProjectCardProps {
     project: Project;
     lang: Language;
     onOpen: (p: Project) => void;
+    theme: Theme;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ project, lang, onOpen }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ project, lang, onOpen, theme }) => {
+    const isDark = theme === 'dark';
     const t = translations[lang];
 
     if ((project as any).isLaravelCollection) {
@@ -20,7 +22,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, lang, onOpen }) => {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="col-span-1 md:col-span-2 lg:col-span-3 glass rounded-[3rem] p-8 md:p-14 border-blue-600/20 group relative overflow-hidden flex flex-col"
+                className={`col-span-1 md:col-span-2 lg:col-span-3 glass rounded-[3rem] p-8 md:p-14 ${isDark ? 'border-blue-600/20' : 'border-blue-600/10 bg-white/50 shadow-xl shadow-blue-500/5'} group relative overflow-hidden flex flex-col`}
             >
                 <div className="flex flex-col lg:flex-row gap-12">
                     <div className="lg:w-1/3 flex flex-col">
@@ -42,16 +44,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, lang, onOpen }) => {
                             ))}
                         </div>
                         <div className="mt-auto">
-                            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="block w-full py-4 border border-white/20 text-white rounded-2xl text-center font-black text-xs uppercase tracking-widest hover:bg-white/5 transition-all shadow-2xl">
+                            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className={`block w-full py-4 border ${isDark ? 'border-white/20 text-white hover:bg-white/5' : 'border-slate-200 text-slate-800 hover:bg-slate-50'} rounded-2xl text-center font-black text-xs uppercase tracking-widest transition-all shadow-2xl`}>
                                 <i className="fab fa-github mr-2"></i> {t.viewCode}
                             </a>
                         </div>
                     </div>
                     <div className="lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 max-h-[500px] overflow-y-auto custom-scroll pr-4">
                         {LARAVEL_COLLECTION_ITEMS.map((item) => (
-                            <div key={item.id} className="p-8 glass rounded-[2rem] border-white/5 hover:border-blue-600/30 hover:bg-blue-600/[0.02] transition-all group/card flex flex-col h-full">
+                            <div key={item.id} className={`p-8 glass rounded-[2rem] border ${isDark ? 'border-white/5 hover:border-blue-600/30' : 'border-blue-600/5 bg-white hover:border-blue-600/20'} hover:bg-blue-600/[0.02] transition-all group/card flex flex-col h-full`}>
                                 <div className="flex justify-between items-start mb-6">
-                                    <div className="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center text-blue-500 group-hover/card:bg-blue-600 group-hover/card:text-white transition-colors">
+                                    <div className={`w-10 h-10 ${isDark ? 'bg-white/5' : 'bg-blue-50'} rounded-xl flex items-center justify-center text-blue-500 group-hover/card:bg-blue-600 group-hover/card:text-white transition-colors`}>
                                         <i className={`fas ${item.icon}`}></i>
                                     </div>
                                     <span className="text-[10px] font-black text-blue-500 opacity-20 tracking-widest">{item.id}</span>
@@ -70,11 +72,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, lang, onOpen }) => {
                                             githubUrl: item.url,
                                             hideImage: true
                                         })}
-                                        className="w-full py-3 bg-white/5 border border-white/10 text-white rounded-xl text-center font-black text-[9px] uppercase tracking-widest hover:bg-blue-600 hover:border-blue-600 transition-all flex items-center justify-center gap-2"
+                                        className={`w-full py-3 ${isDark ? 'bg-white/5 border-white/10 text-white' : 'bg-slate-50 border-slate-200 text-slate-700'} border rounded-xl text-center font-black text-[9px] uppercase tracking-widest hover:bg-blue-600 hover:border-blue-600 hover:text-white transition-all flex items-center justify-center gap-2`}
                                     >
                                         <i className="fas fa-info-circle"></i> {t.viewDetails}
                                     </button>
-                                    <a href={item.url} target="_blank" rel="noopener noreferrer" className="w-full py-3 border border-white/5 text-slate-500 rounded-xl text-center font-black text-[9px] uppercase tracking-widest hover:text-blue-500 hover:border-blue-600/30 transition-all flex items-center justify-center gap-2">
+                                    <a href={item.url} target="_blank" rel="noopener noreferrer" className={`w-full py-3 border ${isDark ? 'border-white/5 text-slate-500' : 'border-slate-200 text-slate-500'} rounded-xl text-center font-black text-[9px] uppercase tracking-widest hover:text-blue-500 hover:border-blue-600/30 transition-all flex items-center justify-center gap-2`}>
                                         <i className="fab fa-github"></i> {t.viewCode}
                                     </a>
                                 </div>
@@ -93,7 +95,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, lang, onOpen }) => {
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="glass rounded-[2rem] overflow-hidden border-white/5 flex flex-col group h-full relative"
+            className={`glass rounded-[2rem] overflow-hidden ${isDark ? 'border-white/5' : 'border-black/5 bg-white shadow-lg shadow-black/5'} flex flex-col group h-full relative`}
         >
             <div className="relative h-64 overflow-hidden group">
                 <img
@@ -125,7 +127,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, lang, onOpen }) => {
                 <p className="text-slate-400 text-[11px] font-medium leading-relaxed mb-6 flex-grow opacity-70 line-clamp-2">{project.description[lang]}</p>
                 <div className="flex flex-wrap gap-2 mb-6">
                     {project.tech.slice(0, 3).map(t => (
-                        <span key={t} className="px-2 py-0.5 bg-white/5 border border-white/10 text-white/40 text-[7px] font-black rounded-full uppercase tracking-widest">{t}</span>
+                        <span key={t} className={`px-2 py-0.5 ${isDark ? 'bg-white/5 border-white/10 text-white/40' : 'bg-slate-100 border-slate-200 text-slate-500'} border text-[7px] font-black rounded-full uppercase tracking-widest`}>{t}</span>
                     ))}
                     {project.tech.length > 3 && <span className="text-[7px] font-black opacity-20 uppercase tracking-widest">+{project.tech.length - 3}</span>}
                 </div>
@@ -133,7 +135,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, lang, onOpen }) => {
                     {project.liveUrl && (
                         <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex-1 py-3 bg-blue-600/10 text-blue-500 border border-blue-600/20 rounded-xl text-center font-black text-[9px] uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all">LIVE</a>
                     )}
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex-1 py-3 border border-white/10 rounded-xl text-center font-black text-[9px] uppercase tracking-widest hover:bg-white/5 transition-colors">CODE</a>
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className={`flex-1 py-3 border ${isDark ? 'border-white/10 hover:bg-white/5 text-white' : 'border-slate-200 text-slate-600 hover:bg-slate-50'} rounded-xl text-center font-black text-[9px] uppercase tracking-widest transition-colors`}>CODE</a>
                 </div>
             </div>
         </motion.div>

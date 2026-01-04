@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
-import { Language, Translation } from '../../core/types';
+import { Language, Translation, Theme } from '../../core/types';
 import MagneticText from '../ui/MagneticText';
 import WordCycler from '../ui/WordCycler';
 
@@ -10,9 +10,11 @@ import NebulaBackground from '../layout/NebulaBackground';
 interface HeroProps {
     lang: Language;
     t: Translation;
+    theme: Theme;
 }
 
-const Hero: React.FC<HeroProps> = ({ lang, t }) => {
+const Hero: React.FC<HeroProps> = ({ lang, t, theme }) => {
+    const isDark = theme === 'dark';
     return (
         <section id="home" className="min-h-screen flex flex-col justify-center items-center text-center px-6 relative pt-20 overflow-hidden">
             <NebulaBackground />
@@ -50,7 +52,7 @@ const Hero: React.FC<HeroProps> = ({ lang, t }) => {
                                 <i className="fas fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
                             </motion.button>
                         </NavLink>
-                        <a href="/SULIMANYOUSEF.pdf" download className="px-10 py-5 glass border border-white/10 text-white rounded-2xl font-black text-lg hover:bg-white/5 hover:border-blue-500/30 hover:scale-105 transition-all flex items-center gap-3 group">
+                        <a href="/SULIMANYOUSEF.pdf" download className={`px-10 py-5 glass border ${isDark ? 'border-white/10 text-white hover:bg-white/5' : 'border-slate-200 text-slate-800 hover:bg-slate-50'} rounded-2xl font-black text-lg hover:border-blue-500/30 hover:scale-105 transition-all flex items-center gap-3 group`}>
                             <i className="fas fa-download group-hover:-translate-y-1 transition-transform"></i>
                             Download CV
                         </a>

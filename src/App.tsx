@@ -82,7 +82,7 @@ const AppContent: React.FC = () => {
 
     const LandingPage = () => (
         <>
-            <Hero lang={lang} t={t} />
+            <Hero lang={lang} t={t} theme={theme} />
             <About t={t} />
             <Resume lang={lang} t={t} theme={theme} />
             <Services lang={lang} />
@@ -96,8 +96,9 @@ const AppContent: React.FC = () => {
                 displayedProjects={displayedProjects}
                 filteredByCategory={filteredByCategory}
                 setSelectedProject={setSelectedProject}
+                theme={theme}
             />
-            <Contact t={t} />
+            <Contact t={t} theme={theme} />
         </>
     );
 
@@ -121,9 +122,10 @@ const AppContent: React.FC = () => {
                         displayedProjects={displayedProjects}
                         filteredByCategory={filteredByCategory}
                         setSelectedProject={setSelectedProject}
+                        theme={theme}
                     />
                 } />
-                <Route path="/contact" element={<Contact t={t} />} />
+                <Route path="/contact" element={<Contact t={t} theme={theme} />} />
             </Routes>
 
             <Footer t={t} theme={theme} />

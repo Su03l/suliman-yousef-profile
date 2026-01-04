@@ -1,11 +1,13 @@
 import React from 'react';
-import { Translation } from '../../core/types';
+import { Translation, Theme } from '../../core/types';
 
 interface ContactProps {
     t: Translation;
+    theme: Theme;
 }
 
-const Contact: React.FC<ContactProps> = ({ t }) => {
+const Contact: React.FC<ContactProps> = ({ t, theme }) => {
+    const isDark = theme === 'dark';
     return (
         <section id="contact" className="py-32 container mx-auto px-6">
             <div className="text-center mb-24 space-y-4">
@@ -65,10 +67,10 @@ const Contact: React.FC<ContactProps> = ({ t }) => {
                         <h4 className="text-3xl font-black mb-6 uppercase tracking-tighter leading-tight italic">{t.contactCTA}</h4>
                         <p className="text-slate-400 font-medium mb-10 leading-relaxed">{t.contactCTADesc}</p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <a href="mailto:sulimany662@gmail.com" className="px-8 py-4 bg-white text-black rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all text-center">
+                            <a href="mailto:sulimany662@gmail.com" className={`px-8 py-4 ${isDark ? 'bg-white text-black hover:bg-blue-600 hover:text-white' : 'bg-slate-900 text-white hover:bg-blue-600'} rounded-2xl font-black text-xs uppercase tracking-widest transition-all text-center`}>
                                 {t.contactSendEmail}
                             </a>
-                            <a href="https://wa.me/966590128804" target="_blank" rel="noopener noreferrer" className="px-8 py-4 border border-white/10 text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-green-600 hover:border-green-600 transition-all text-center flex items-center justify-center gap-2">
+                            <a href="https://wa.me/966590128804" target="_blank" rel="noopener noreferrer" className={`px-8 py-4 border ${isDark ? 'border-white/10 text-white' : 'border-slate-300 text-slate-800'} rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-green-600 hover:border-green-600 hover:text-white transition-all text-center flex items-center justify-center gap-2`}>
                                 <i className="fab fa-whatsapp"></i> {t.contactWhatsApp}
                             </a>
                         </div>
