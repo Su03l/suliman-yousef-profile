@@ -63,18 +63,19 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, lang, onClose }) =
                         </h2>
                     </div>
 
-                    <div className={`text-slate-300 text-sm leading-relaxed font-light mb-8 opacity-90 ${project.hideImage ? 'mx-auto max-w-lg text-left' : ''}`}>
+                    <div className={`text-slate-300 text-sm leading-relaxed font-light mb-8 opacity-90 ${project.hideImage ? 'mx-auto max-w-lg' : ''}`}>
                         {project.description[lang].split('\n').map((line, idx) => {
-                            if (line.trim().startsWith('•') || line.trim().startsWith('-')) {
+                            const isBullet = line.trim().startsWith('•') || line.trim().startsWith('-');
+                            if (isBullet) {
                                 return (
-                                    <div key={idx} className="flex gap-3 mb-2 group/line">
-                                        <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 shrink-0 group-hover/line:scale-125 transition-transform shadow-[0_0_10px_rgba(59,130,246,0.5)]" />
-                                        <span>{line.replace(/^[•-]\s*/, '')}</span>
+                                    <div key={idx} className="flex gap-4 mb-3 group/line items-start">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 shrink-0 group-hover/line:scale-125 transition-transform shadow-[0_0_100px_rgba(59,130,246,0.5)]" />
+                                        <span className="flex-1">{line.replace(/^[•-]\s*/, '')}</span>
                                     </div>
                                 );
                             }
                             if (line.trim().endsWith(':')) {
-                                return <h4 key={idx} className="font-black text-blue-400 uppercase tracking-widest text-[10px] mt-6 mb-3">{line}</h4>;
+                                return <h4 key={idx} className="font-black text-blue-400 uppercase tracking-widest text-[10px] mt-8 mb-4 border-b border-blue-500/10 pb-2 w-fit">{line}</h4>;
                             }
                             return <p key={idx} className={line.trim() ? 'mb-4' : 'h-4'}>{line}</p>;
                         })}

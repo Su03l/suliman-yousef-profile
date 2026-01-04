@@ -416,8 +416,8 @@ export const LARAVEL_COLLECTION_ITEMS = [
         id: "02",
         name: "HRSystem",
         desc: {
-            en: "HR management platform handling employees, departments, and comprehensive personnel data",
-            ar: "منصة إدارة الموارد البشرية للتعامل مع الموظفين والأقسام وبيانات الأفراد."
+            en: "A simple RESTful API for managing HR operations including employees and departments, built with Laravel.\n\nFeatures:\n• CRUD Operations: Create, Read, Update, and Delete employees and departments.\n• Department Management: Manage organization departments with full CRUD capabilities.\n• Employee Management: Handle employee records and link them to respective departments.\n• Validation: Robust input validation (required fields, data integrity).\n• API Resources: Utilizing Laravel API Resources for consistent JSON responses.",
+            ar: "واجهة برمجة تطبيقات RESTful بسيطة لإدارة عمليات الموارد البشرية بما في ذلك الموظفين والأقسام، مبنية باستخدام Laravel.\n\nالمميزات:\n• عمليات CRUD: إنشاء، قراء، تحديث، وحذف الموظفين والأقسام.\n• إدارة الأقسام: إدارة أقسام المنظمة بإمكانيات CRUD كاملة.\n• إدارة الموظفين: إدارة سجلات الموظفين مع ربطهم بالأقسام.\n• التحقق من الصحة: تحقق قوي من صحة البيانات المدخلة (مثل الحقول المطلوبة، سلامة البيانات).\n• موارد API: استخدام موارد Laravel API للحصول على استجابات JSON متسقة."
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/HRSystem",
         icon: "fa-users-cog"
