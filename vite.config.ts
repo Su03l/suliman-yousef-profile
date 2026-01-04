@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => {
     server: {
       port: 3000,
       host: '0.0.0.0',
-      
+
       // Force watch for changes
       watch: {
         usePolling: true,
@@ -21,6 +21,18 @@ export default defineConfig(({ mode }) => {
 
 
 
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            'vendor-react': ['react', 'react-dom', 'react-router-dom'],
+            'vendor-ui': ['framer-motion'],
+            'vendor-three': ['three']
+          }
+        }
+      },
+      chunkSizeWarningLimit: 1000
+    },
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),

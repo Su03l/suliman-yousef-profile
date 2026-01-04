@@ -20,7 +20,7 @@ const NebulaBackground: React.FC = () => {
         container.appendChild(renderer.domElement);
 
         // Particle System (Starfield)
-        const particlesCount = 5000;
+        const particlesCount = 2000;
         const geo = new THREE.BufferGeometry();
         const pos = new Float32Array(particlesCount * 3);
         const colors = new Float32Array(particlesCount * 3);
