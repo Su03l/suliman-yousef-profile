@@ -51,7 +51,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, lang, onOpen, theme 
                     </div>
                     <div className="lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 max-h-[500px] overflow-y-auto custom-scroll pr-4">
                         {LARAVEL_COLLECTION_ITEMS.map((item) => (
-                            <div key={item.id} className={`p-8 glass rounded-[2rem] border ${isDark ? 'border-white/5 hover:border-blue-600/30' : 'border-blue-600/5 bg-white hover:border-blue-600/20'} hover:bg-blue-600/[0.02] transition-all group/card flex flex-col h-full`}>
+                            <div key={item.id} className={`p-8 rounded-[2rem] border ${isDark ? 'border-blue-600/20 hover:border-blue-600/40 hover:bg-blue-600/[0.02]' : 'border-blue-600/5 bg-white hover:border-blue-600/20'} transition-all group/card flex flex-col h-full`}>
                                 <div className="flex justify-between items-start mb-6">
                                     <div className={`w-10 h-10 ${isDark ? 'bg-white/5' : 'bg-blue-50'} rounded-xl flex items-center justify-center text-blue-500 group-hover/card:bg-blue-600 group-hover/card:text-white transition-colors`}>
                                         <i className={`fas ${item.icon}`}></i>
