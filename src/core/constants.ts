@@ -515,7 +515,7 @@ export const LARAVEL_COLLECTION_ITEMS = [
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/HR_Reports_API",
         icon: "fa-chart-line",
-        tech: ["PHP", "Laravel", "Streaming", "CSV Export"]
+        tech: ["Laravel 10/11", "PHP Streams (Efficiency Export)", "Eloquent Scopes", "SQLite", "Scramble (API Documentation)"]
     },
     {
         id: "11",
