@@ -56,7 +56,10 @@ const AppContent: React.FC = () => {
     const filteredByCategory = PROJECTS.filter(p => filter === 'all' || p.category === filter);
     const displayedProjects = showAll
         ? filteredByCategory
-        : filteredByCategory.filter(p => !(p as any).isLaravelCollection).slice(0, 9);
+        : [
+            ...filteredByCategory.filter(p => !(p as any).isLaravelCollection).slice(0, 9),
+            ...filteredByCategory.filter(p => (p as any).isLaravelCollection)
+        ];
 
     const commonProps = {
         lang,

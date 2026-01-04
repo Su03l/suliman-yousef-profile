@@ -63,10 +63,26 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, lang, onOpen }) => {
                                     <span className="text-[10px] font-black text-blue-500 opacity-20 tracking-widest">{item.id}</span>
                                 </div>
                                 <h5 className="font-black text-sm mb-3 uppercase tracking-tight group-hover/card:text-blue-500 transition-colors">{item.name}</h5>
-                                <p className="text-[10px] text-slate-400 font-medium leading-relaxed mb-6 opacity-70 flex-grow">{item.desc[lang]}</p>
-                                <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-[9px] font-black uppercase tracking-[0.2em] text-blue-500 flex items-center gap-2 group-hover/card:translate-x-2 transition-transform">
-                                    <i className="fab fa-github"></i> View Code
-                                </a>
+                                <p className="text-[10px] text-slate-400 font-medium leading-relaxed mb-6 opacity-70 flex-grow line-clamp-3">{item.desc[lang]}</p>
+                                <div className="flex items-center gap-4 mt-auto">
+                                    <button
+                                        onClick={() => onOpen({
+                                            id: `laravel-${item.id}`,
+                                            title: { en: item.name, ar: item.name },
+                                            description: item.desc,
+                                            category: 'backend',
+                                            tech: ["PHP", "Laravel", "REST API"],
+                                            image: "/img/card.png",
+                                            githubUrl: item.url
+                                        })}
+                                        className="text-[9px] font-black uppercase tracking-[0.2em] text-white/40 hover:text-blue-500 transition-colors flex items-center gap-2"
+                                    >
+                                        <i className="fas fa-info-circle"></i> {t.viewDetails}
+                                    </button>
+                                    <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-[9px] font-black uppercase tracking-[0.2em] text-blue-500 flex items-center gap-2 group-hover/card:translate-x-1 transition-transform">
+                                        <i className="fab fa-github"></i> {t.viewCode}
+                                    </a>
+                                </div>
                             </div>
                         ))}
                     </div>
