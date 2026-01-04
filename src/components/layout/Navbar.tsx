@@ -46,7 +46,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, setLang, theme, setTheme, scrolle
                     onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                     className="w-10 h-10 glass rounded-xl flex items-center justify-center text-lg hover:text-blue-500 transition-all border-white/10"
                 >
-                    {theme === 'light' ? <i className="fas fa-moon"></i> : <i className="fas fa-sun text-yellow-400"></i>}
+                    {theme === 'light' ? <i className="fas fa-moon"></i> : <i className="fas fa-sun"></i>}
                 </button>
             </div>
         </nav>
