@@ -28,13 +28,13 @@ const About: React.FC<AboutProps> = ({ t }) => {
                         </div>
                     ))}
                 </div>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
-                    <div className="space-y-6 text-xl text-slate-400 font-light leading-relaxed">
-                        <p>{t.aboutText1}</p>
-                        <p>{t.aboutText2}</p>
-                        <p>{t.aboutText3}</p>
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center mb-32">
+                    <div className="lg:col-span-7 glass p-8 md:p-12 rounded-[2.5rem] border border-white/10 shadow-2xl space-y-6 text-xl text-slate-400 font-light leading-relaxed hover:border-blue-500/30 hover:shadow-blue-500/10 hover:scale-[1.01] transition-all duration-500 group">
+                        <p className="group-hover:text-slate-300 transition-colors">{t.aboutText1}</p>
+                        <p className="group-hover:text-slate-300 transition-colors">{t.aboutText2}</p>
+                        <p className="group-hover:text-slate-300 transition-colors">{t.aboutText3}</p>
                     </div>
-                    <div className="flex justify-center lg:justify-end">
+                    <div className="lg:col-span-5 flex justify-center lg:justify-end">
                         <div className="relative w-full max-w-[450px] aspect-square">
                             <div className="relative z-10 rounded-[3rem] overflow-hidden w-full h-full border-2 border-white/10 shadow-2xl group grayscale hover:grayscale-0 transition-all duration-700">
                                 <img src="/img/avatar.jpg" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Suliman Yousef" />
