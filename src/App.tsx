@@ -149,6 +149,7 @@ const AppContent: React.FC = () => {
                         project={selectedProject}
                         lang={lang}
                         onClose={() => setSelectedProject(null)}
+                        theme={theme}
                     />
                 )}
             </AnimatePresence>
