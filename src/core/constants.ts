@@ -526,8 +526,8 @@ export const LARAVEL_COLLECTION_ITEMS = [
         id: "13",
         name: "Advanced E-Commerce API",
         desc: {
-            en: "A comprehensive e-commerce backend system focusing on Data Integrity and file management. Solves race condition problems ensuring no out-of-stock items are sold using advanced database techniques",
-            ar: "باك اند متجر إلكتروني شامل يركز على سلامة البيانات وإدارة الملفات وحل مشكلات التزامن."
+            en: "An advanced Backend system for an e-commerce platform, focusing on Data Integrity and file management. It solves 'Race Conditions' and ensures no out-of-stock items are sold using advanced database techniques.\n\nKey Technical Features:\n• Database Transactions: Using DB::beginTransaction to ensure atomic purchase processes (Order Creation + Stock Deduction) with full rollback support.\n• Concurrency Control: Implementing lockForUpdate() to prevent over-selling the last stock items.\n• Smart Stock Management: Automatic deduction on purchase and restoration on order deletion.\n• Image Uploads: Secure product image management with auto-cleanup on product removal.\n• Account Security: Secure password and profile management.",
+            ar: "نظام متقدم لتجارة إلكترونية، يركز على دقة المعاملات (Data Integrity) وإدارة الملفات. يحل مشكلة تضارب الطلبات (Race Conditions) ويضمن عدم بيع منتجات غير متوفرة.\n\nأبرز المميزات التقنية:\n• العمليات الآمنة (Database Transactions): استخدام DB::beginTransaction لضمان تنفيذ عملية الشراء ككتلة واحدة.\n• منع تضارب الطلبات (Concurrency Control): استخدام lockForUpdate() لمنع شراء آخر قطعة في نفس اللحظة.\n• إدارة المخزون الذكية: خصم تلقائي عند الشراء واسترجاع تلقائي عند الإلغاء.\n• رفع الصور: نظام متكامل لرفع صور المنتجات وحذفها تلقائياً عند مسح المنتج.\n• إدارة الحساب: تحديث البيانات الشخصية وكلمة المرور بشكل آمن."
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/ECommerce-API",
         icon: "fa-shopping-bag"
