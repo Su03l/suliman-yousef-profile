@@ -55,13 +55,18 @@
         color: #0f172a;
       }
 
-      @keyframes marquee {
+      @keyframes cert-marquee {
         0% {
           transform: translateX(0);
         }
         100% {
           transform: translateX(-50%);
         }
+      }
+      .animate-cert-marquee {
+        display: flex;
+        width: max-content;
+        animation: cert-marquee 60s linear infinite;
       }
       .animate-marquee {
         display: flex;

@@ -9,6 +9,8 @@ interface ResumeProps {
 }
 
 const Resume: React.FC<ResumeProps> = ({ lang, t }) => {
+    const isDark = document.documentElement.classList.contains('dark');
+
     return (
         <section id="resume" className="py-40 bg-white/[0.01]">
             <div className="container mx-auto px-6 max-w-7xl">
@@ -61,41 +63,44 @@ const Resume: React.FC<ResumeProps> = ({ lang, t }) => {
                     </motion.div>
                 </div>
 
-                {/* Certifications Section */}
-                <div className="mt-32">
-                    <h2 className="text-3xl font-black tracking-tighter mb-12 flex items-center gap-4">
+                {/* Certifications Section - Continuous Scroll */}
+                <div className="mt-32 overflow-hidden">
+                    <h2 className="text-3xl font-black tracking-tighter mb-12 flex items-center gap-4 px-6">
                         <span className="w-10 h-1 bg-blue-600"></span> {t.certificationTitle.toUpperCase()}
                     </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {CERTIFICATIONS.map((cert, i) => (
-                            <motion.div
-                                key={i}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: i * 0.05 }}
-                                className="glass p-8 rounded-[2.5rem] border border-white/5 hover:border-blue-500/30 transition-all duration-500 group relative overflow-hidden"
-                            >
-                                <div className="absolute -right-4 -top-4 w-24 h-24 bg-blue-600/5 blur-2xl rounded-full group-hover:bg-blue-600/10 transition-colors"></div>
 
-                                <div className="flex justify-between items-start mb-6">
-                                    <div className="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center text-blue-500 group-hover:bg-blue-600 group-hover:text-white transition-all duration-500">
-                                        <i className="fas fa-medal text-xl"></i>
+                    <div className="relative group">
+                        {/* Gradient Overlays for smooth edges - Theme Responsive */}
+                        <div className={`absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r ${isDark ? 'from-[#020617]' : 'from-[#f8fafc]'} to-transparent z-10 pointer-events-none`}></div>
+                        <div className={`absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l ${isDark ? 'from-[#020617]' : 'from-[#f8fafc]'} to-transparent z-10 pointer-events-none`}></div>
+
+                        <div className="flex gap-6 animate-cert-marquee hover:[animation-play-state:paused] py-10">
+                            {[...CERTIFICATIONS, ...CERTIFICATIONS].map((cert, i) => (
+                                <div
+                                    key={i}
+                                    className="flex-shrink-0 w-[400px] glass p-8 rounded-[2.5rem] border border-white/5 hover:border-blue-500/30 transition-all duration-500 group relative overflow-hidden flex flex-col justify-between"
+                                >
+                                    <div className="absolute -right-4 -top-4 w-24 h-24 bg-blue-600/5 blur-2xl rounded-full group-hover:bg-blue-600/10 transition-colors"></div>
+
+                                    <div className="flex justify-between items-start mb-6">
+                                        <div className="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center text-blue-500 group-hover:bg-blue-600 group-hover:text-white transition-all duration-500">
+                                            <i className="fas fa-medal text-xl"></i>
+                                        </div>
+                                        <span className="text-[10px] font-black tracking-[0.2em] text-blue-500/60 uppercase">{cert.year}</span>
                                     </div>
-                                    <span className="text-[10px] font-black tracking-[0.2em] text-blue-500/60 uppercase">{cert.year}</span>
-                                </div>
 
-                                <h4 className="text-xl font-black mb-2 tracking-tight group-hover:text-blue-500 transition-colors uppercase italic leading-tight">
-                                    {cert.title[lang]}
-                                </h4>
-                                <p className="text-blue-400/80 text-xs font-bold mb-4 uppercase tracking-widest italic tracking-tighter">
-                                    {cert.issuer[lang]}
-                                </p>
-                                <p className="text-slate-400 text-sm leading-relaxed opacity-70 group-hover:opacity-100 transition-opacity line-clamp-3">
-                                    {cert.description[lang]}
-                                </p>
-                            </motion.div>
-                        ))}
+                                    <h4 className="text-xl font-black mb-2 tracking-tight group-hover:text-blue-500 transition-colors uppercase italic leading-tight">
+                                        {cert.title[lang]}
+                                    </h4>
+                                    <p className="text-blue-400/80 text-xs font-bold mb-4 uppercase tracking-widest italic tracking-tighter">
+                                        {cert.issuer[lang]}
+                                    </p>
+                                    <p className="text-slate-400 text-sm leading-relaxed opacity-70 group-hover:opacity-100 transition-opacity line-clamp-3">
+                                        {cert.description[lang]}
+                                    </p>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
