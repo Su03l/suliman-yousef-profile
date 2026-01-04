@@ -28,8 +28,8 @@ const About: React.FC<AboutProps> = ({ t }) => {
                         </div>
                     ))}
                 </div>
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center mb-32">
-                    <div className="lg:col-span-7 glass p-8 md:p-12 rounded-[2.5rem] border border-white/10 shadow-2xl space-y-6 text-xl text-slate-400 font-light leading-relaxed hover:border-blue-500/30 hover:shadow-blue-500/10 hover:scale-[1.01] transition-all duration-500 group">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-stretch mb-32">
+                    <div className="lg:col-span-7 glass p-8 md:p-14 rounded-[2.5rem] border border-white/10 shadow-2xl space-y-6 text-xl text-slate-400 font-light leading-relaxed hover:border-blue-500/30 hover:shadow-blue-500/10 hover:scale-[1.01] transition-all duration-500 group flex flex-col justify-center h-full">
                         <p className="group-hover:text-slate-300 transition-colors">{t.aboutText1}</p>
                         <p className="group-hover:text-slate-300 transition-colors">{t.aboutText2}</p>
                         <p className="group-hover:text-slate-300 transition-colors">{t.aboutText3}</p>
