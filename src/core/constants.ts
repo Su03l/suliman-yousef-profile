@@ -486,8 +486,8 @@ export const LARAVEL_COLLECTION_ITEMS = [
         id: "09",
         name: "Real Estate API",
         desc: {
-            en: "Property management system with advanced search engine using Query Scopes and dynamic filtering by city, type, price range, and fuzzy area search",
-            ar: "نظام إدارة العقارات مع محرك بحث متقدم باستخدام Query Scopes وتصفية ديناميكية."
+            en: "A flexible real estate management API built with Laravel, primarily focusing on Query Scopes and Dynamic Filtering. It allows users to search for properties based on multiple complex criteria efficiently through a single endpoint.\n\nKey Features:\n• Advanced Search Engine: Filter results by city, type, status, price, and more using just one endpoint.\n• Smart Scopes: Utilizing Local Scopes within the model to keep controllers clean and maintainable.\n• Fuzzy Search: Intelligent logic for area searching with a tolerance range (±20 meters) to ensure near-match results are not lost.\n• Validation & Documentation: Using FormRequests for robust input validation and auto-generating documentation.\n• Route Conflict Resolution: Handling priority issues between custom and standard resource routes.",
+            ar: "نظام API مرن لإدارة العقارات مبني باستخدام Laravel، يركز بشكل أساسي على نطاقات الاستعلام (Query Scopes) والفلترة الديناميكية (Dynamic Filtering).\n\nأبرز المميزات:\n• محرك بحث متقدم: فلترة النتائج حسب المدينة، النوع، الحالة، والسعر باستخدام Endpoint واحد فقط.\n• سكوبات ذكية (Smart Scopes): استخدام Local Scopes داخل المودل للحفاظ على نظافة الكنترولر.\n• البحث التقريبي (Fuzzy Search): منطق ذكي للبحث عن المساحة بنطاق تسامح (±20 متر) لضمان عدم فقدان النتائج القريبة.\n• التحقق والتوثيق: استخدام FormRequest لضمان صحة المدخلات وتوليد توثيق تلقائي للحقول.\n• حل تعارض الروابط: معالجة مشكلة الأولوية بين الروابط المخصصة وروابط الموارد القياسية."
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/RealEstate-API",
         icon: "fa-building"
