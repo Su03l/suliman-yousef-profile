@@ -526,7 +526,7 @@ export const LARAVEL_COLLECTION_ITEMS = [
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/Secure_Notes_API",
         icon: "fa-lock",
-        tech: ["PHP", "Laravel", "Sanctum", "Security"]
+        tech: ["Laravel 10/11", "Laravel Sanctum (Token Based Auth)", "Eloquent Relationships (One-to-Many)", "Middleware Protection", "SQLite"]
     },
     {
         id: "12",
