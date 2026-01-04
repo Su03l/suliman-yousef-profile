@@ -504,7 +504,7 @@ export const LARAVEL_COLLECTION_ITEMS = [
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/RealEstate-API",
         icon: "fa-building",
-        tech: ["PHP", "Laravel", "Query Scopes", "Dynamic Filtering"]
+        tech: ["Laravel 10/11", "Eloquent ORM (Builder & Scopes)", "SQLite", "API Resources", "Scramble (API Documentation)"]
     },
     {
         id: "10",
