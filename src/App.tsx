@@ -1,0 +1,145 @@
+import React, { useState, useEffect } from 'react';
+import { AnimatePresence } from 'framer-motion';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+
+// Types
+import { Language, Theme, Project } from './core/types';
+
+// Data & Translations
+import { translations } from './core/translations';
+import { PROJECTS } from './core/constants';
+
+// Layout
+import Navbar from './components/layout/Navbar';
+import Footer from './components/layout/Footer';
+import ScrollToTop from './components/layout/ScrollToTop';
+import NebulaBackground from './components/layout/NebulaBackground';
+
+// Projects
+import ProjectModal from './components/projects/ProjectModal';
+
+// Sections
+import Hero from './components/sections/Hero';
+import About from './components/sections/About';
+import Resume from './components/sections/Resume';
+import Services from './components/sections/Services';
+import Projects from './components/sections/Projects';
+import Contact from './components/sections/Contact';
+
+const AppContent: React.FC = () => {
+    const [lang, setLang] = useState<Language>('en');
+    const [theme, setTheme] = useState<Theme>('dark');
+    const [filter, setFilter] = useState<'all' | 'frontend' | 'backend' | 'fullstack'>('all');
+    const [showAll, setShowAll] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+    const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
+    const t = translations[lang];
+    const location = useLocation();
+
+    useEffect(() => {
+        document.documentElement.classList.toggle('dark', theme === 'dark');
+        document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 50);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [theme, lang]);
+
+    // Added scroll to top on route change
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location.pathname]);
+
+    const filteredByCategory = PROJECTS.filter(p => filter === 'all' || p.category === filter);
+    const displayedProjects = showAll
+        ? filteredByCategory
+        : filteredByCategory.filter(p => !(p as any).isLaravelCollection).slice(0, 9);
+
+    const commonProps = {
+        lang,
+        t,
+        filter,
+        setFilter,
+        showAll,
+        setShowAll,
+        displayedProjects,
+        filteredByCategory,
+        setSelectedProject
+    };
+
+    const LandingPage = () => (
+        <>
+            <Hero lang={lang} t={t} />
+            <About t={t} />
+            <Resume lang={lang} t={t} />
+            <Services lang={lang} />
+            <Projects
+                lang={lang}
+                t={t}
+                filter={filter}
+                setFilter={setFilter}
+                showAll={showAll}
+                setShowAll={setShowAll}
+                displayedProjects={displayedProjects}
+                filteredByCategory={filteredByCategory}
+                setSelectedProject={setSelectedProject}
+            />
+            <Contact t={t} />
+        </>
+    );
+
+    return (
+        <div className={`min-h-screen text-slate-100 selection:bg-blue-600 selection:text-white transition-colors duration-500 ${lang === 'ar' ? 'font-["IBM_Plex_Sans_Arabic"]' : 'font-["Work_Sans"]'}`}>
+            <Navbar lang={lang} setLang={setLang} theme={theme} setTheme={setTheme} scrolled={scrolled} />
+
+            <Routes>
+                <Route path="/" element={<LandingPage />} />
+                <Route path="/about" element={<About t={t} />} />
+                <Route path="/resume" element={<Resume lang={lang} t={t} />} />
+                <Route path="/services" element={<Services lang={lang} />} />
+                <Route path="/projects" element={
+                    <Projects
+                        lang={lang}
+                        t={t}
+                        filter={filter}
+                        setFilter={setFilter}
+                        showAll={showAll}
+                        setShowAll={setShowAll}
+                        displayedProjects={displayedProjects}
+                        filteredByCategory={filteredByCategory}
+                        setSelectedProject={setSelectedProject}
+                    />
+                } />
+                <Route path="/contact" element={<Contact t={t} />} />
+            </Routes>
+
+            <Footer t={t} />
+
+            <ScrollToTop />
+
+            <AnimatePresence mode="wait">
+                {selectedProject && (
+                    <ProjectModal
+                        key="modal"
+                        project={selectedProject}
+                        lang={lang}
+                        onClose={() => setSelectedProject(null)}
+                    />
+                )}
+            </AnimatePresence>
+        </div>
+    );
+};
+
+const App: React.FC = () => {
+    return (
+        <BrowserRouter>
+            <AppContent />
+        </BrowserRouter>
+    );
+};
+
+export default App;
