@@ -41,14 +41,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, lang, onOpen }) => {
                                 <span key={t} className="px-3 py-1 bg-blue-600/10 border border-blue-600/20 text-blue-500 text-[9px] font-black rounded-full uppercase tracking-widest">{t}</span>
                             ))}
                         </div>
-                        <div className="mt-auto flex gap-4">
-                            <button
-                                onClick={() => onOpen(project)}
-                                className="flex-1 py-4 bg-white text-black rounded-2xl text-center font-black text-xs uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all shadow-xl shadow-white/5"
-                            >
-                                <i className="fas fa-info-circle mr-2"></i> {t.viewDetails}
-                            </button>
-                            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex-1 py-4 border border-white/10 text-white rounded-2xl text-center font-black text-xs uppercase tracking-widest hover:bg-white/5 transition-all">
+                        <div className="mt-auto">
+                            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="block w-full py-4 border border-white/20 text-white rounded-2xl text-center font-black text-xs uppercase tracking-widest hover:bg-white/5 transition-all shadow-2xl">
                                 <i className="fab fa-github mr-2"></i> {t.viewCode}
                             </a>
                         </div>
@@ -64,7 +58,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, lang, onOpen }) => {
                                 </div>
                                 <h5 className="font-black text-sm mb-3 uppercase tracking-tight group-hover/card:text-blue-500 transition-colors">{item.name}</h5>
                                 <p className="text-[10px] text-slate-400 font-medium leading-relaxed mb-6 opacity-70 flex-grow line-clamp-3">{item.desc[lang]}</p>
-                                <div className="flex items-center gap-4 mt-auto">
+                                <div className="flex flex-col gap-3 mt-auto">
                                     <button
                                         onClick={() => onOpen({
                                             id: `laravel-${item.id}`,
@@ -75,11 +69,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, lang, onOpen }) => {
                                             image: "/img/card.png",
                                             githubUrl: item.url
                                         })}
-                                        className="text-[9px] font-black uppercase tracking-[0.2em] text-white/40 hover:text-blue-500 transition-colors flex items-center gap-2"
+                                        className="w-full py-3 bg-white/5 border border-white/10 text-white rounded-xl text-center font-black text-[9px] uppercase tracking-widest hover:bg-blue-600 hover:border-blue-600 transition-all flex items-center justify-center gap-2"
                                     >
                                         <i className="fas fa-info-circle"></i> {t.viewDetails}
                                     </button>
-                                    <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-[9px] font-black uppercase tracking-[0.2em] text-blue-500 flex items-center gap-2 group-hover/card:translate-x-1 transition-transform">
+                                    <a href={item.url} target="_blank" rel="noopener noreferrer" className="w-full py-3 border border-white/5 text-slate-500 rounded-xl text-center font-black text-[9px] uppercase tracking-widest hover:text-blue-500 hover:border-blue-600/30 transition-all flex items-center justify-center gap-2">
                                         <i className="fab fa-github"></i> {t.viewCode}
                                     </a>
                                 </div>
