@@ -559,7 +559,7 @@ export const LARAVEL_COLLECTION_ITEMS = [
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/University-System_ad",
         icon: "fa-university",
-        tech: ["PHP", "Laravel", "High Concurrency", "Waitlist System"]
+        tech: ["Laravel 11", "PHP 8.2+", "SQLite", "Laravel Sanctum", "RESTful API", "Service-Oriented Logic", "Database Transactions (Pessimistic Locking)"]
     },
     {
         id: "15",
@@ -570,7 +570,7 @@ export const LARAVEL_COLLECTION_ITEMS = [
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/Support-Ticket-System",
         icon: "fa-headset",
-        tech: ["PHP", "Laravel", "Polymorphic Relations", "RBAC"]
+        tech: ["Laravel 11", "PHP 8.2+", "SQLite", "Laravel Sanctum", "RESTful API", "Scramble (API Documentation)", "Postman & Git"]
     }
 ];
 
