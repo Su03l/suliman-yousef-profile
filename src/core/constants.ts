@@ -537,7 +537,7 @@ export const LARAVEL_COLLECTION_ITEMS = [
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/Task_Manager_with_Roles",
         icon: "fa-user-shield",
-        tech: ["PHP", "Laravel", "RBAC", "Security Policies"]
+        tech: ["Laravel 10/11", "Sanctum (Token Based Authentication)", "Policies & Gates (Authorization Logic)", "Database Seeding (For Testing Roles)"]
     },
     {
         id: "13",
