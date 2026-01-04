@@ -10,6 +10,7 @@ export interface Project {
     image: string;
     liveUrl?: string;
     githubUrl: string;
+    hideImage?: boolean;
 }
 
 export interface Certification {

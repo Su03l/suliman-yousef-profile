@@ -67,7 +67,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, lang, onOpen }) => {
                                             category: 'backend',
                                             tech: ["PHP", "Laravel", "REST API"],
                                             image: "/img/card.png",
-                                            githubUrl: item.url
+                                            githubUrl: item.url,
+                                            hideImage: true
                                         })}
                                         className="w-full py-3 bg-white/5 border border-white/10 text-white rounded-xl text-center font-black text-[9px] uppercase tracking-widest hover:bg-blue-600 hover:border-blue-600 transition-all flex items-center justify-center gap-2"
                                     >
