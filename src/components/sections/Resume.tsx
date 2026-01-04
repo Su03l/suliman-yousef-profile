@@ -83,16 +83,16 @@ const Resume: React.FC<ResumeProps> = ({ lang, t }) => {
                                     zIndex: i + 10
                                 }}
                             >
-                                <div className={`glass p-10 md:p-14 rounded-[3.5rem] border ${isDark ? 'border-white/5 bg-slate-950/80' : 'border-black/5 bg-white/80'} backdrop-blur-3xl shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] group relative overflow-hidden flex flex-col md:flex-row gap-10 items-center`}>
+                                <div className={`p-10 md:p-14 rounded-[3.5rem] border ${isDark ? 'border-white/10 bg-[#0a0f1e]' : 'border-black/5 bg-white'} backdrop-blur-3xl shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] group relative overflow-hidden flex flex-col md:flex-row gap-10 items-center`}>
                                     <div className="absolute -right-20 -top-20 w-80 h-80 bg-blue-600/5 blur-[100px] rounded-full group-hover:bg-blue-600/10 transition-colors"></div>
 
-                                    <div className="flex-shrink-0">
+                                    <div className="flex-shrink-0 relative z-10">
                                         <div className="w-24 h-24 bg-blue-600 rounded-3xl flex items-center justify-center text-white shadow-2xl shadow-blue-500/20 rotate-3 group-hover:rotate-0 transition-transform duration-500">
                                             <i className="fas fa-medal text-4xl"></i>
                                         </div>
                                     </div>
 
-                                    <div className="flex-1 text-center md:text-left">
+                                    <div className="flex-1 text-center md:text-left relative z-10">
                                         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
                                             <div>
                                                 <span className="inline-block px-4 py-1.5 bg-blue-600/10 text-blue-500 font-black tracking-[0.3em] mb-4 text-[10px] uppercase rounded-full border border-blue-600/20">
@@ -113,7 +113,7 @@ const Resume: React.FC<ResumeProps> = ({ lang, t }) => {
                                     </div>
 
                                     {/* Decorative background number */}
-                                    <span className="absolute bottom-6 right-10 text-8xl font-black opacity-[0.03] select-none italic">
+                                    <span className="absolute bottom-6 right-10 text-8xl font-black opacity-[0.05] select-none italic z-0">
                                         {String(i + 1).padStart(2, '0')}
                                     </span>
                                 </div>
