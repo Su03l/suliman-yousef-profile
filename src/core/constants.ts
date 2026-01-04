@@ -516,8 +516,8 @@ export const LARAVEL_COLLECTION_ITEMS = [
         id: "12",
         name: "Task Manager with Roles",
         desc: {
-            en: "Advanced API system simulating enterprise applications, focusing on Authorization management and role distribution between Admin and User. Features Role-Based Access Control (RBAC), Laravel Policies for security, intelligent visibility scope, and complete permissions matrix",
-            ar: "نظام إدارة مهام متقدم يحاكي تطبيقات الشركات الكبيرة مع التركيز على إدارة الصلاحيات."
+            en: "An advanced API system simulating enterprise applications, focusing on Authorization management and Role-Based Access Control (RBAC) between Admin and User. The project utilizes Laravel Policies to separate security logic, ensuring robust data privacy based on user hierarchy.\n\nKey Features:\n• Role-Based Access Control (RBAC):\n  - Admin: Full 'God Mode' access to manage all tasks and users.\n  - User: 'Scoped Access' limited strictly to their own data.\n• Security Policies: Using Laravel Policies to protect all CRUD operations at the backend.\n• User Management: Dedicated admin dashboard to manage employee records (Add, Edit, Terminate).\n• Intelligent Visibility Scope: Admins view global tasks while Users are restricted to their own entries.",
+            ar: "نظام واجهة برمجية (API) متقدم يحاكي الأنظمة المؤسسية، يركز بشكل أساسي على إدارة الصلاحيات (Authorization) وتوزيع الأدوار بين المدير (Admin) والموظف (User).\n\nأبرز المميزات:\n• نظام الرتب (Role-Based Access Control):\n  - المدير (Admin): يمتلك صلاحيات مطلقة (God Mode) لإدارة المهام والمستخدمين.\n  - الموظف (User): صلاحيات محدودة تقتصر على بياناته الخاصة.\n• سياسات الحماية (Policies): استخدام Laravel Policies لحماية جميع عمليات (CRUD) في الخلفية.\n• إدارة المستخدمين: لوحة تحكم خاصة بالمدير لإدارة الموظفين (إضافة، تعديل، فصل).\n• مجال الرؤية الذكي: المدير يرى مهام الجميع، بينما الموظف يرى مهامه فقط."
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/Task_Manager_with_Roles",
         icon: "fa-user-shield"
