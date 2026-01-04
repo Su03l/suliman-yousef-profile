@@ -95,7 +95,7 @@ const AppContent: React.FC = () => {
     );
 
     return (
-        <div className={`min-h-screen text-slate-100 selection:bg-blue-600 selection:text-white transition-colors duration-500 ${lang === 'ar' ? 'font-["IBM_Plex_Sans_Arabic"]' : 'font-["Work_Sans"]'}`}>
+        <div className={`min-h-screen selection:bg-blue-600 selection:text-white transition-colors duration-500 ${theme === 'dark' ? 'text-slate-100' : 'text-slate-900'} ${lang === 'ar' ? 'font-["IBM_Plex_Sans_Arabic"]' : 'font-["Work_Sans"]'}`}>
             <Navbar lang={lang} setLang={setLang} theme={theme} setTheme={setTheme} scrolled={scrolled} />
 
             <Routes>
@@ -119,7 +119,7 @@ const AppContent: React.FC = () => {
                 <Route path="/contact" element={<Contact t={t} />} />
             </Routes>
 
-            <Footer t={t} />
+            <Footer t={t} theme={theme} />
 
             <ScrollToTop />
 
