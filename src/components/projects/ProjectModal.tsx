@@ -63,9 +63,22 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, lang, onClose }) =
                         </h2>
                     </div>
 
-                    <p className={`text-slate-300 text-base leading-relaxed font-light mb-8 opacity-90 ${project.hideImage ? 'mx-auto max-w-lg' : ''}`}>
-                        {project.description[lang]}
-                    </p>
+                    <div className={`text-slate-300 text-sm leading-relaxed font-light mb-8 opacity-90 ${project.hideImage ? 'mx-auto max-w-lg text-left' : ''}`}>
+                        {project.description[lang].split('\n').map((line, idx) => {
+                            if (line.trim().startsWith('•') || line.trim().startsWith('-')) {
+                                return (
+                                    <div key={idx} className="flex gap-3 mb-2 group/line">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 shrink-0 group-hover/line:scale-125 transition-transform shadow-[0_0_10px_rgba(59,130,246,0.5)]" />
+                                        <span>{line.replace(/^[•-]\s*/, '')}</span>
+                                    </div>
+                                );
+                            }
+                            if (line.trim().endsWith(':')) {
+                                return <h4 key={idx} className="font-black text-blue-400 uppercase tracking-widest text-[10px] mt-6 mb-3">{line}</h4>;
+                            }
+                            return <p key={idx} className={line.trim() ? 'mb-4' : 'h-4'}>{line}</p>;
+                        })}
+                    </div>
 
                     <div className="mb-8">
                         <h4 className="text-[10px] font-black uppercase tracking-widest text-blue-400 mb-4">{lang === 'en' ? 'Stack' : 'التقنيات'}</h4>

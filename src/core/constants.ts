@@ -406,8 +406,8 @@ export const LARAVEL_COLLECTION_ITEMS = [
         id: "01",
         name: "PhonebookAPI",
         desc: {
-            en: "Complete contact management system with search functionality and CRUD operations",
-            ar: "نظام متكامل لإدارة جهات الاتصال مع ميزة البحث وعمليات CRUD."
+            en: "A simple RESTful API for managing phone contacts, built with Laravel.\n\nFeatures:\n• CRUD Operations: Create, Read, Update, and Delete contacts.\n• Search: Find contacts by phone number.\n• Validation: Robust input validation (unique phone numbers, required fields).\n• API Resources: Utilizing Laravel API Resources for consistent JSON output.",
+            ar: "واجهة برمجة تطبيقات RESTful بسيطة لإدارة جهات الاتصال الهاتفية، مبنية باستخدام Laravel.\n\nالمميزات:\n• عمليات CRUD: إنشاء، قراء، تحديث، وحذف جهات الاتصال.\n• البحث: البحث عن جهات الاتصال برقم الهاتف.\n• التحقق من الصحة: تحقق قوي من صحة البيانات المدخلة (مثل أرقام هواتف فريدة، حقول مطلوبة).\n• موارد API: استخدام موارد Laravel API للحصول على استجابات JSON متسقة."
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/PhonebookAPI",
         icon: "fa-address-book"
