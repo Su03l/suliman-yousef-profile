@@ -65,7 +65,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, lang, onOpen }) => {
                                             title: { en: item.name, ar: item.name },
                                             description: item.desc,
                                             category: 'backend',
-                                            tech: ["PHP", "Laravel", "REST API"],
+                                            tech: (item as any).tech,
                                             image: "/img/card.png",
                                             githubUrl: item.url,
                                             hideImage: true

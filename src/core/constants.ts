@@ -410,7 +410,8 @@ export const LARAVEL_COLLECTION_ITEMS = [
             ar: "واجهة برمجة تطبيقات RESTful بسيطة لإدارة جهات الاتصال الهاتفية، مبنية باستخدام Laravel.\n\nالمميزات:\n• عمليات CRUD: إنشاء، قراء، تحديث، وحذف جهات الاتصال.\n• البحث: البحث عن جهات الاتصال برقم الهاتف.\n• التحقق من الصحة: تحقق قوي من صحة البيانات المدخلة (مثل أرقام هواتف فريدة، حقول مطلوبة).\n• موارد API: استخدام موارد Laravel API للحصول على استجابات JSON متسقة."
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/PhonebookAPI",
-        icon: "fa-address-book"
+        icon: "fa-address-book",
+        tech: ["PHP", "Laravel", "REST API", "MySQL"]
     },
     {
         id: "02",
@@ -420,7 +421,8 @@ export const LARAVEL_COLLECTION_ITEMS = [
             ar: "واجهة برمجة تطبيقات RESTful بسيطة لإدارة عمليات الموارد البشرية بما في ذلك الموظفين والأقسام، مبنية باستخدام Laravel.\n\nالمميزات:\n• عمليات CRUD: إنشاء، قراء، تحديث، وحذف الموظفين والأقسام.\n• إدارة الأقسام: إدارة أقسام المنظمة بإمكانيات CRUD كاملة.\n• إدارة الموظفين: إدارة سجلات الموظفين مع ربطهم بالأقسام.\n• التحقق من الصحة: تحقق قوي من صحة البيانات المدخلة (مثل الحقول المطلوبة، سلامة البيانات).\n• موارد API: استخدام موارد Laravel API للحصول على استجابات JSON متسقة."
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/HRSystem",
-        icon: "fa-users-cog"
+        icon: "fa-users-cog",
+        tech: ["PHP", "Laravel", "REST API", "HR Logic"]
     },
     {
         id: "03",
@@ -430,7 +432,8 @@ export const LARAVEL_COLLECTION_ITEMS = [
             ar: "واجهة برمجة تطبيقات RESTful بسيطة لإدارة عمليات الجامعة بما في ذلك الطلاب والمواد الدراسية، مبنية باستخدام Laravel.\n\nالمميزات:\n• عمليات CRUD: إنشاء، قراء، تحديث، وحذف الطلاب والمواد الدراسية.\n• إدارة المواد: إدارة المواد الدراسية بإمكانيات CRUD كاملة.\n• إدارة الطلاب: إدارة سجلات الطلاب مع التسجيل في المواد.\n• تسجيل المواد: تسجيل الطلاب في المواد وإدارة الالتحاقات.\n• التحقق من الصحة: تحقق قوي من صحة البيانات المدخلة (مثل الحقول المطلوبة، سلامة البيانات).\n• موارد API: استخدام موارد Laravel API للحصول على استجابات JSON متسقة."
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/UniversitySystem",
-        icon: "fa-graduation-cap"
+        icon: "fa-graduation-cap",
+        tech: ["PHP", "Laravel", "REST API", "Education Systems"]
     },
     {
         id: "04",
@@ -440,7 +443,8 @@ export const LARAVEL_COLLECTION_ITEMS = [
             ar: "واجهة برمجة تطبيقات RESTful لنظام تجارة إلكترونية بسيط يدير المنتجات والطلبات، مبنية باستخدام Laravel. تتميز بعلاقات متقدمة وإدارة تلقائية للمخزون.\n\nالمميزات:\n• إدارة المنتجات: عمليات CRUD كاملة مع تتبع المخزون.\n• معالجة الطلبات: إنشاء طلبات بمنتجات وكميات متعددة.\n• إدارة المخزون: خصم واستعادة تلقائية للمخزون، ومنع الطلب عند النقص.\n• منطق تلقائي: توليد تلقائي لأرقام طلبات فريدة.\n• التحقق من الصحة: تحقق صارم من المدخلات وتوفر المخزون.\n• معاملات قاعدة البيانات: ضمان سلامة البيانات أثناء العمليات الحساسة."
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/Mini_Store_API",
-        icon: "fa-shopping-cart"
+        icon: "fa-shopping-cart",
+        tech: ["PHP", "Laravel", "Database Transactions", "E-commerce"]
     },
     {
         id: "05",
@@ -450,7 +454,8 @@ export const LARAVEL_COLLECTION_ITEMS = [
             ar: "واجهة برمجة تطبيقات RESTful قوية لإدارة أعمال تأجير السيارات، مبنية باستخدام Laravel. تتميز بحساب تلقائي للتكاليف، وإدارة صارمة لحالة المركبات.\n\nالمميزات الرئيسية:\n• إدارة الأسطول: عمليات CRUD كاملة للسيارات مع تتبع الحالة (متاح، مؤجر، صيانة).\n• إدارة العملاء: إدارة ملفات العملاء مع فحص الهوية الفريدة.\n• منطق التأجير:\n  - الفوترة التلقائية: حساب تلقائي للتكلفة بناءً على المدة والسعر اليومي.\n  - إدارة الحالة: تبديل تلقائي لحالة السيارة عند الحجز والإرجاع.\n  - منع التعارضات: منع حجز المركبات المؤجرة حالياً أو غير المتاحة.\n• معاملات قاعدة البيانات: ضمان اتساق البيانات عبر جميع العمليات."
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/Car_Rental_API",
-        icon: "fa-car"
+        icon: "fa-car",
+        tech: ["PHP", "Laravel", "Rental Logic", "MySQL"]
     },
     {
         id: "06",
@@ -460,7 +465,8 @@ export const LARAVEL_COLLECTION_ITEMS = [
             ar: "لوحة وظائف كاملة الميزات تربط أصحاب العمل بالباحثين عن عمل."
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/pixel-positions",
-        icon: "fa-briefcase"
+        icon: "fa-briefcase",
+        tech: ["PHP", "Laravel", "Job Board"]
     },
     {
         id: "07",
@@ -470,17 +476,24 @@ export const LARAVEL_COLLECTION_ITEMS = [
             ar: "هذا هو الواجهة الخلفية (Backend API) لتطبيق قائمة المهام، مبني باستخدام Laravel. يوفر واجهة RESTful لمصادقة المستخدمين وإدارة المهام. يستخدم API نظام Laravel Sanctum للمصادقة المستندة إلى الكوكيز للتطبيقات أحادية الصفحة (SPA)."
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/todo-app",
-        icon: "fa-tasks"
+        icon: "fa-tasks",
+        tech: ["PHP", "Laravel", "Sanctum", "SPA Auth"]
     },
     {
         id: "08",
         name: "Project Manager API",
         desc: {
-            en: "A flexible project management system built with Laravel. This project showcases advanced concepts like Polymorphic Relationships to dynamically link notes and files to multiple models (projects and tasks), along with professional file upload and storage management.\n\nKey Features:\n• Project & Task Management: Create projects and assign multiple tasks with progress tracking.\n• Smart Notes (Polymorphic): Add notes to either projects or tasks using a single unified table.\n• Attachments (File Uploads): Upload images/PDFs with full URL retrieval and clean physical file deletion on record removal.\n• Unified Endpoints: Intelligent controller handling requests based on entity type.\n\nTechnologies Used:\n• Laravel: The main framework.\n• Polymorphic Relations: Using morphTo and morphMany.\n• Storage Facade: Handling file uploads and deletions in the public disk.\n• API Resources: Formatting JSON responses and adding image URLs.",
-            ar: "نظام مرن لإدارة المشاريع مبني باستخدام Laravel. يستعرض هذا المشروع مفاهيم متقدمة مثل العلاقات متعددة الأشكال (Polymorphic Relationships) لربط الملاحظات والملفات بأكثر من مودل ديناميكياً.\n\nالمميزات الرئيسية:\n• إدارة المشاريع والمهام: إنشاء مشاريع وإسناد مهام مع تتبع الإنجاز.\n• ملاحظات ذكية (Polymorphic): إضافة ملاحظات للمشاريع أو المهام باستخدام جدول موحد.\n• المرفقات (رفع الملفات): رفع الصور وملفات PDF مع استرجاع الرابط الكامل والحذف التلقائي للملفات من السيرفر.\n• نقاط وصول موحدة: كنترولر ذكي يتعامل مع الطلبات بناءً على النوع.\n\nالتقنيات المستخدمة:\n• Laravel: إطار العمل الأساسي.\n• Polymorphic Relations: استخدام morphTo و morphMany.\n• Storage Facade: للتعامل مع رفع وحذف الملفات في الـ public disk.\n• API Resources: لتنسيق ردود الـ JSON وإضافة روابط الصور."
+            en: "A flexible project management system built with Laravel. This project showcases advanced concepts like Polymorphic Relationships to dynamically link notes and files to multiple models (projects and tasks), along with professional file upload and storage management.\n\nKey Features:\n• Project & Task Management: Create projects and assign multiple tasks with progress tracking.\n• Smart Notes (Polymorphic): Add notes to either projects or tasks using a single unified table.\n• Attachments (File Uploads): Upload images/PDFs with full URL retrieval and clean physical file deletion on record removal.\n• Unified Endpoints: Intelligent controller handling requests based on entity type.",
+            ar: "نظام مرن لإدارة المشاريع مبني باستخدام Laravel. يستعرض هذا المشروع مفاهيم متقدمة مثل العلاقات متعددة الأشكال (Polymorphic Relationships) لربط الملاحظات والملفات بأكثر من مودل ديناميكياً.\n\nالمميزات الرئيسية:\n• إدارة المشاريع والمهام: إنشاء مشاريع وإسناد مهام مع تتبع الإنجاز.\n• ملاحظات ذكية (Polymorphic): إضافة ملاحظات للمشاريع أو المهام باستخدام جدول موحد.\n• المرفقات (رفع الملفات): رفع الصور وملفات PDF مع استرجاع الرابط الكامل والحذف التلقائي للملفات من السيرفر.\n• نقاط وصول موحدة: كنترولر ذكي يتعامل مع الطلبات بناءً على النوع."
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/Project_Manager",
-        icon: "fa-project-diagram"
+        icon: "fa-project-diagram",
+        tech: [
+            "Laravel: إطار العمل الأساسي.",
+            "Polymorphic Relations: استخدام morphTo و morphMany.",
+            "Storage Facade: للتعامل مع رفع وحذف الملفات في الـ public disk.",
+            "API Resources: لتنسيق ردود الـ JSON وإضافة روابط الصور."
+        ]
     },
     {
         id: "09",
@@ -490,7 +503,8 @@ export const LARAVEL_COLLECTION_ITEMS = [
             ar: "نظام API مرن لإدارة العقارات مبني باستخدام Laravel، يركز بشكل أساسي على نطاقات الاستعلام (Query Scopes) والفلترة الديناميكية (Dynamic Filtering).\n\nأبرز المميزات:\n• محرك بحث متقدم: فلترة النتائج حسب المدينة، النوع، الحالة، والسعر باستخدام Endpoint واحد فقط.\n• سكوبات ذكية (Smart Scopes): استخدام Local Scopes داخل المودل للحفاظ على نظافة الكنترولر.\n• البحث التقريبي (Fuzzy Search): منطق ذكي للبحث عن المساحة بنطاق تسامح (±20 متر) لضمان عدم فقدان النتائج القريبة.\n• التحقق والتوثيق: استخدام FormRequest لضمان صحة المدخلات وتوليد توثيق تلقائي للحقول.\n• حل تعارض الروابط: معالجة مشكلة الأولوية بين الروابط المخصصة وروابط الموارد القياسية."
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/RealEstate-API",
-        icon: "fa-building"
+        icon: "fa-building",
+        tech: ["PHP", "Laravel", "Query Scopes", "Dynamic Filtering"]
     },
     {
         id: "10",
@@ -500,7 +514,8 @@ export const LARAVEL_COLLECTION_ITEMS = [
             ar: "نظام API متخصص لإدارة سجلات الموظفين، يركز بشكل أساسي على توليد التقارير وتصدير البيانات عبر تقنية الـ Streaming.\n\nأبرز المميزات:\n• تصدير البيانات (CSV Export): تحميل تقارير الموظفين بضغطة زر مع دعم الفلترة.\n• أداء عالي (Streamed Response): استخدام تقنية الـ Streaming لتصدير الملفات الضخمة دون استهلاك الذاكرة.\n• فلترة مالية وزمنية: البحث عن الموظفين حسب نطاق الراتب أو سنة التعيين.\n• توثيق تلقائي: استخدام FormRequest لدعم أدوات التوثيق.\n• فصل المهام: تخصيص Endpoints مستقلة للبحث (/search) والتصدير (/export)."
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/HR_Reports_API",
-        icon: "fa-chart-line"
+        icon: "fa-chart-line",
+        tech: ["PHP", "Laravel", "Streaming", "CSV Export"]
     },
     {
         id: "11",
@@ -510,7 +525,8 @@ export const LARAVEL_COLLECTION_ITEMS = [
             ar: "نظام واجهة برمجية (API) آمن ومتكامل لإدارة الملاحظات الشخصية. يعتمد على Laravel Sanctum للمصادقة وحماية البيانات بخصوصية كاملة.\n\nأبرز المميزات:\n• نظام مصادقة متكامل: تسجيل دخول، تسجيل جديد، وخروج باستخدام الـ Tokens.\n• حماية ملكية البيانات (Data Ownership): منع الوصول لأي مذكرات لا يملكها المستخدم.\n• بحث آمن (Secure Search): محرك بحث ذكي يضمن خصوصية البيانات لكل مستخدم.\n• حماية الصلاحيات: تأمين مسارات تعديل البيانات الحساسة."
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/Secure_Notes_API",
-        icon: "fa-lock"
+        icon: "fa-lock",
+        tech: ["PHP", "Laravel", "Sanctum", "Security"]
     },
     {
         id: "12",
@@ -520,7 +536,8 @@ export const LARAVEL_COLLECTION_ITEMS = [
             ar: "نظام واجهة برمجية (API) متقدم يحاكي الأنظمة المؤسسية، يركز بشكل أساسي على إدارة الصلاحيات (Authorization) وتوزيع الأدوار بين المدير (Admin) والموظف (User).\n\nأبرز المميزات:\n• نظام الرتب (Role-Based Access Control):\n  - المدير (Admin): يمتلك صلاحيات مطلقة (God Mode) لإدارة المهام والمستخدمين.\n  - الموظف (User): صلاحيات محدودة تقتصر على بياناته الخاصة.\n• سياسات الحماية (Policies): استخدام Laravel Policies لحماية جميع عمليات (CRUD) في الخلفية.\n• إدارة المستخدمين: لوحة تحكم خاصة بالمدير لإدارة الموظفين (إضافة، تعديل، فصل).\n• مجال الرؤية الذكي: المدير يرى مهام الجميع، بينما الموظف يرى مهامه فقط."
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/Task_Manager_with_Roles",
-        icon: "fa-user-shield"
+        icon: "fa-user-shield",
+        tech: ["PHP", "Laravel", "RBAC", "Security Policies"]
     },
     {
         id: "13",
@@ -530,7 +547,8 @@ export const LARAVEL_COLLECTION_ITEMS = [
             ar: "نظام متقدم لتجارة إلكترونية، يركز على دقة المعاملات (Data Integrity) وإدارة الملفات. يحل مشكلة تضارب الطلبات (Race Conditions) ويضمن عدم بيع منتجات غير متوفرة.\n\nأبرز المميزات التقنية:\n• العمليات الآمنة (Database Transactions): استخدام DB::beginTransaction لضمان تنفيذ عملية الشراء ككتلة واحدة.\n• منع تضارب الطلبات (Concurrency Control): استخدام lockForUpdate() لمنع شراء آخر قطعة في نفس اللحظة.\n• إدارة المخزون الذكية: خصم تلقائي عند الشراء واسترجاع تلقائي عند الإلغاء.\n• رفع الصور: نظام متكامل لرفع صور المنتجات وحذفها تلقائياً عند مسح المنتج.\n• إدارة الحساب: تحديث البيانات الشخصية وكلمة المرور بشكل آمن."
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/ECommerce-API",
-        icon: "fa-shopping-bag"
+        icon: "fa-shopping-bag",
+        tech: ["PHP", "Laravel", "Database Transactions", "E-Commerce"]
     },
     {
         id: "14",
@@ -540,17 +558,19 @@ export const LARAVEL_COLLECTION_ITEMS = [
             ar: "نظام باك اند متقدم يحاكي عمليات التسجيل الجامعية المعقدة. يركز على سلامة البيانات تحت ضغط التزامن العالي وفرض قواعد أكاديمية صارمة.\n\nمحرك التسجيل الذكي:\n• يطبق النظام 5 طبقات تحقق: كشف التعارض الزمني، منطق المتطلبات السابقة، منع التكرار، إدارة السعة، والتحكم في التزامن عبر Pessimistic Locking لمنع الحجز الزائد.\n\nنظام قائمة الانتظار الآلي:\n• معالجة ذكية للشُعب الممتلئة: إضافة الطلاب لقائمة FIFO، والترقية التلقائية لأول طالب في الانتظار عند انسحاب أي مسجل مع تحديث السعة فوراً.\n\nهيكلة بيانات متقدمة:\n• فصل المسؤوليات: كيانات منفصلة للمواد والشُّعب.\n• علاقات ذاتية: تنفيذ علاقة المرشد والطالب ضمن جدول المستخدمين.\n• سلامة البيانات: استخدام Soft Deletes للحفاظ على السجل الأكاديمي و API Resources لاستجابات نظيفة.\n\nالأمان والتحكم بالصلاحيات:\n• مصادقة Token عبر Laravel Sanctum وفصل صارم للصلاحيات بين الطالب والمرشد عبر Middleware."
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/University-System_ad",
-        icon: "fa-university"
+        icon: "fa-university",
+        tech: ["PHP", "Laravel", "High Concurrency", "Waitlist System"]
     },
     {
         id: "15",
         name: "Smart Support Ticket API",
         desc: {
             en: "A comprehensive backend system for managing technical support requests, built with Laravel. It simulates an enterprise environment focusing on data security, role-based access control, and advanced database relationships.\n\nPolymorphic Relationships:\n• Smart central attachment system using a single table for both tickets and replies via MorphMany relationships, ensuring high scalability.\n\nRBAC & Scoping:\n• Intelligent data handling: Regular users view only their own tickets, while Admins have global access and management capabilities.\n• IDOR Protection: Preventing unauthorized access to tickets via direct URL manipulation.\n\nAutomated Business Logic:\n• Auto-Status: Tickets automatically switch to 'In Progress' upon staff reply.\n• Unique Identifiers: Automatic generation of unique reference numbers (e.g., TCK-X9YB2).\n\nClean Architecture:\n• Using Request Classes for validation, API Resources for consistent JSON output, and PHP Enums for type-safe status and priority management.",
-            ar: "نظام خلفي (Backend) متكامل لإدارة طلبات الدعم الفني، مبني باستخدام Laravel يحاكي بيئة العمل المؤسسية من خلال التركيز على أمن البيانات وفصل الصلاحيات.\n\nتعدد الأشكال (Polymorphic):\n• نظام مرفقات مركزي وذكي يخدم التذاكر والردود ديناميكياً باستخدام علاقة MorphMany لضمان قابلية التوسع.\n\nالصلاحيات والخصوصية:\n• مجال رؤية ذكي: يرى المستخدم تذاكره فقط، بينما يمتلك المشرف صلاحية كاملة.\n• حماية IDOR: منع الوصول لتذاكر الآخرين عبر الروابط المباشرة.\n• تتبع مؤتمت: تحول تلقائي للحالة إلى 'In Progress' ونتوليد أرقام مرجعية فريدة.\n\nهندسة نظيفة:\n• استخدام Request Classes للتحقق، و API Resources لتنسيق المخرجات، و PHP Enums لضبط الحالات بالأولويات."
+            ar: "نظام خلفي (Backend) متكامل لإدارة طلبات الدعم فني، مبني باستخدام Laravel يحاكي بيئة العمل المؤسسية من خلال التركيز على أمن البيانات وفصل الصلاحيات.\n\nتعدد الأشكال (Polymorphic):\n• نظام مرفقات مركزي وذكي يخدم التذاكر والردود ديناميكياً باستخدام علاقة MorphMany لضمان قابلية التوسع.\n\nالصلاحيات والخصوصية:\n• مجال رؤية ذكي: يرى المستخدم تذاكره فقط، بينما يمتلك المشرف صلاحية كاملة.\n• حماية IDOR: منع الوصول لتذاكر الآخرين عبر الروابط المباشرة.\n• تتبع مؤتمت: تحول تلقائي للحالة إلى 'In Progress' ونتوليد أرقام مرجعية فريدة.\n\nهندسة نظيفة:\n• استخدام Request Classes للتحقق، و API Resources لتنسيق المخرجات، و PHP Enums لضبط الحالات بالأولويات."
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/Support-Ticket-System",
-        icon: "fa-headset"
+        icon: "fa-headset",
+        tech: ["PHP", "Laravel", "Polymorphic Relations", "RBAC"]
     }
 ];
 
