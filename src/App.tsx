@@ -29,7 +29,8 @@ import Contact from './components/sections/Contact';
 const AppContent: React.FC = () => {
     const [lang, setLang] = useState<Language>('en');
     const [theme, setTheme] = useState<Theme>(() => {
-        return (localStorage.getItem('theme') as Theme) || 'dark';
+        const savedTheme = localStorage.getItem('theme') as Theme;
+        return savedTheme || 'dark';
     });
 
     useEffect(() => {
