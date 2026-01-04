@@ -548,7 +548,7 @@ export const LARAVEL_COLLECTION_ITEMS = [
         },
         url: "https://github.com/Su03l/Laravel-projects/tree/main/ECommerce-API",
         icon: "fa-shopping-bag",
-        tech: ["PHP", "Laravel", "Database Transactions", "E-Commerce"]
+        tech: ["Laravel 10/11", "Laravel Sanctum (Auth)", "SQLite", "Database Transactions", "Multipart/Form-Data (Image Uploads)", "PHP Traits & Eloquent Relationships"]
     },
     {
         id: "14",
