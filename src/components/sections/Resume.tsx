@@ -19,10 +19,10 @@ const Resume: React.FC<ResumeProps> = ({ lang, t, theme }) => {
                     <h2 className="text-blue-500 font-black uppercase tracking-[0.5em] text-sm">Portfolio</h2>
                     <h3 className="text-5xl md:text-7xl font-black tracking-tighter leading-none uppercase italic">Professional Path</h3>
                     <div className="flex flex-wrap justify-center gap-6 pt-12">
-                        <a href="/SULIMANYOUSEF.pdf" target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-blue-600 text-white rounded-2xl font-black text-xs uppercase tracking-widest shadow-[0_20px_40px_-12px_rgba(59,130,246,0.5)] hover:bg-blue-700 hover:scale-105 transition-all flex items-center gap-3">
+                        <a href="/SULIMAN_YOUSEF_CV.pdf" target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-blue-600 text-white rounded-2xl font-black text-xs uppercase tracking-widest shadow-[0_20px_40px_-12px_rgba(59,130,246,0.5)] hover:bg-blue-700 hover:scale-105 transition-all flex items-center gap-3">
                             <i className="fas fa-eye text-lg"></i> View CV
                         </a>
-                        <a href="/SULIMANYOUSEF.pdf" download className={`px-10 py-5 glass border ${isDark ? 'border-white/10 text-white hover:bg-white/5' : 'border-slate-200 text-slate-800 hover:bg-slate-50'} rounded-2xl font-black text-xs uppercase tracking-widest hover:border-blue-500/30 hover:scale-105 transition-all flex items-center gap-3`}>
+                        <a href="/SULIMAN_YOUSEF_CV.pdf" download className={`px-10 py-5 glass border ${isDark ? 'border-white/10 text-white hover:bg-white/5' : 'border-slate-200 text-slate-800 hover:bg-slate-50'} rounded-2xl font-black text-xs uppercase tracking-widest hover:border-blue-500/30 hover:scale-105 transition-all flex items-center gap-3`}>
                             <i className="fas fa-download text-lg"></i> Download CV
                         </a>
                     </div>

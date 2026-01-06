@@ -585,10 +585,10 @@ const AppContent: React.FC<{
                   <h2 className="text-blue-500 font-black uppercase tracking-[0.5em] text-sm">Portfolio</h2>
                   <h3 className="text-5xl md:text-7xl font-black tracking-tighter leading-none uppercase italic">Professional Path</h3>
                   <div className="flex justify-center gap-6 pt-12">
-                    <a href="SULIMANYOUSEF.pdf" target="_blank" className="px-10 py-4 bg-white text-black rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all flex items-center gap-2">
+                    <a href="SULIMAN_YOUSEF_CV.pdf" target="_blank" className="px-10 py-4 bg-white text-black rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-blue-600 hover:text-white transition-all flex items-center gap-2">
                       <i className="fas fa-eye"></i> View CV
                     </a>
-                    <a href="SULIMANYOUSEF.pdf" download className="px-10 py-4 border border-white/10 text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white/5 transition-all flex items-center gap-2">
+                    <a href="SULIMAN_YOUSEF_CV.pdf" download className="px-10 py-4 border border-white/10 text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white/5 transition-all flex items-center gap-2">
                       <i className="fas fa-download"></i> Download CV
                     </a>
                   </div>
