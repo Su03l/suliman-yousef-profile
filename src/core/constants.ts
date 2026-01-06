@@ -115,14 +115,15 @@ export const TECH_STACK = [
     { name: "Next.js", svg: "/svg/next-white.svg", svgLight: "/svg/next-js-svgrepo-com.svg" },
     { name: "Laravel", svg: "/svg/laravel.svg" },
     { name: "PHP", svg: "/svg/php.svg" },
+    { name: "Java", svg: "/svg/java-svgrepo-com.svg" },
+    { name: "Spring Boot", svg: "/svg/spring-boot-icon.svg" },
     { name: "Node.js", svg: "/svg/node-js-svgrepo-com.svg" },
     { name: "Express", svg: "/svg/express-white.svg", svgLight: "/svg/express-svgrepo-com.svg" },
     { name: "Python", svg: "/svg/python.svg" },
     { name: "PostgreSQL", svg: "/svg/postgresql-logo-svgrepo-com.svg" },
     { name: "Git", svg: "/svg/git-svgrepo-com.svg" },
     { name: "Vite", svg: "/svg/vite.svg" },
-    { name: "Java", svg: "/svg/java-svgrepo-com.svg" },
-    { name: "Spring Boot", svg: "/svg/spring-boot-icon.svg" }
+
 ];
 
 export const PROJECTS: (Project & { isLaravelCollection?: boolean })[] = [
