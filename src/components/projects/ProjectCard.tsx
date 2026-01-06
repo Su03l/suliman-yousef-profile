@@ -54,7 +54,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, lang, onOpen, theme 
                             <div key={item.id} className={`p-8 rounded-[2rem] border ${isDark ? 'border-blue-600/20 hover:border-blue-600/40 hover:bg-blue-600/[0.02]' : 'border-blue-600/5 bg-white hover:border-blue-600/20'} transition-all group/card flex flex-col h-full`}>
                                 <div className="flex justify-between items-start mb-6">
                                     <div className={`w-10 h-10 ${isDark ? 'bg-white/5' : 'bg-blue-50'} rounded-xl flex items-center justify-center text-blue-500 group-hover/card:bg-blue-600 group-hover/card:text-white transition-colors`}>
-                                        <i className={`fas ${item.icon}`}></i>
+                                        {item.icon.startsWith('fa-') ? (
+                                            <i className={`fas ${item.icon}`}></i>
+                                        ) : (
+                                            <span className="text-xl">{item.icon}</span>
+                                        )}
                                     </div>
                                     <span className="text-[10px] font-black text-blue-500 opacity-20 tracking-widest">{item.id}</span>
                                 </div>

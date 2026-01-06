@@ -613,6 +613,17 @@ export const LARAVEL_COLLECTION_ITEMS = [
         url: "https://github.com/Su03l/Laravel-projects/tree/main/Support-Ticket-System",
         icon: "fa-headset",
         tech: ["Laravel 11", "PHP 8.2+", "SQLite", "Laravel Sanctum", "RESTful API", "Scramble (API Documentation)", "Postman & Git"]
+    },
+    {
+        id: "16",
+        name: "NeoBank Core API",
+        desc: {
+            en: "A comprehensive Fintech Backend system built with Laravel, simulating real banking systems. It features IBAN generation, ACID transactions, and race condition prevention.\n\nKey Features:\n• Auto-Banking Identity: Automatically generates unique account numbers and SA IBANs upon user registration via Model Events.\n• Smart Transfer Engine: Intelligent payment processing accepting Email, Phone, Account Number, or IBAN without sender needing to know the recipient's type.\n• Financial Integrity: Uses Database Transactions and Atom Locks (lockForUpdate) to prevent double spending and ensure all-or-nothing execution.\n• Detailed Resources: API Resources for structured data including Account Cards and detailed Transaction Statements.",
+            ar: "نظام مالي متكامل (Fintech Backend) مبني باستخدام Laravel. يحاكي الأنظمة البنكية الحقيقية من حيث توليد أرقام الحسابات الدولية (IBAN)، إدارة العمليات المالية الآمنة (ACID Transactions)، ومنع تضارب البيانات (Race Conditions).\n\nأبرز المميزات التقنية:\n• الهوية البنكية التلقائية: إنشاء محفظة وتوليد رقم حساب وآيبان (SA IBAN) تلقائياً عند التسجيل.\n• محرك التحويل الذكي: إمكانية التحويل عبر البريد، الهاتف، رقم الحساب، أو الآيبان، حيث يبحث النظام عن المستلم تلقائياً.\n• الأمان المالي: استخدام Database Transactions و Atomic Locks لمنع الإنفاق المزدوج (Double Spending) وضمان سلامة العمليات.\n• تقارير مفصلة: استخدام API Resources لتقديم بطاقة الحساب وكشف حساب دقيق للعمليات."
+        },
+        url: "https://github.com/Su03l/Laravel-projects/tree/main/NeoBank",
+        icon: "🏦",
+        tech: ["Laravel 11", "PHP 8.2+", "ACID Transactions", "Pessimistic Locking", "Polymorphic Logic", "Model Events"]
     }
 ];
 
