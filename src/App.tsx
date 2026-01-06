@@ -91,7 +91,7 @@ const AppContent: React.FC = () => {
     const LandingPage = () => (
         <>
             <Hero lang={lang} t={t} theme={theme} />
-            <About t={t} />
+            <About t={t} theme={theme} />
             <Resume lang={lang} t={t} theme={theme} />
             <Services lang={lang} />
             <Projects
@@ -117,7 +117,7 @@ const AppContent: React.FC = () => {
             <Suspense fallback={<PageLoader />}>
                 <Routes>
                     <Route path="/" element={<LandingPage />} />
-                    <Route path="/about" element={<About t={t} />} />
+                    <Route path="/about" element={<About t={t} theme={theme} />} />
                     <Route path="/resume" element={<Resume lang={lang} t={t} theme={theme} />} />
                     <Route path="/services" element={<Services lang={lang} />} />
                     <Route path="/projects" element={

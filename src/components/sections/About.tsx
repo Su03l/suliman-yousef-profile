@@ -1,12 +1,13 @@
 import React from 'react';
-import { Translation } from '../../core/types';
+import { Translation, Theme } from '../../core/types';
 import TechMarquee from '../ui/TechMarquee';
 
 interface AboutProps {
     t: Translation;
+    theme: Theme;
 }
 
-const About: React.FC<AboutProps> = ({ t }) => {
+const About: React.FC<AboutProps> = ({ t, theme }) => {
     return (
         <section id="about" className="py-40 container mx-auto px-6">
             <div className="max-w-6xl mx-auto">
@@ -44,7 +45,7 @@ const About: React.FC<AboutProps> = ({ t }) => {
                         </div>
                     </div>
                 </div>
-                <TechMarquee />
+                <TechMarquee theme={theme} />
             </div>
         </section>
     );

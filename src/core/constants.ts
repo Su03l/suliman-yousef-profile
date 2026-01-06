@@ -112,15 +112,17 @@ export const TECH_STACK = [
     { name: "JavaScript", svg: "/svg/javascript-svgrepo-com.svg" },
     { name: "TypeScript", svg: "/svg/typescript-icon-svgrepo-com.svg" },
     { name: "React", svg: "/svg/react-svgrepo-com.svg" },
-    { name: "Next.js", svg: "/svg/next-white.svg" },
+    { name: "Next.js", svg: "/svg/next-white.svg", svgLight: "/svg/next-js-svgrepo-com.svg" },
     { name: "Laravel", svg: "/svg/laravel.svg" },
     { name: "PHP", svg: "/svg/php.svg" },
     { name: "Node.js", svg: "/svg/node-js-svgrepo-com.svg" },
-    { name: "Express", svg: "/svg/express-white.svg" },
+    { name: "Express", svg: "/svg/express-white.svg", svgLight: "/svg/express-svgrepo-com.svg" },
     { name: "Python", svg: "/svg/python.svg" },
     { name: "PostgreSQL", svg: "/svg/postgresql-logo-svgrepo-com.svg" },
     { name: "Git", svg: "/svg/git-svgrepo-com.svg" },
-    { name: "Vite", svg: "/svg/vite.svg" }
+    { name: "Vite", svg: "/svg/vite.svg" },
+    { name: "Java", svg: "/svg/java-svgrepo-com.svg" },
+    { name: "Spring Boot", svg: "/svg/spring-boot-icon.svg" }
 ];
 
 export const PROJECTS: (Project & { isLaravelCollection?: boolean })[] = [
