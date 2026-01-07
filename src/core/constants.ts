@@ -627,6 +627,17 @@ export const LARAVEL_COLLECTION_ITEMS = [
         url: "https://github.com/Su03l/Laravel-projects/tree/main/NeoBank",
         icon: "🏦",
         tech: ["Laravel 11", "PHP 8.2+", "ACID Transactions", "Pessimistic Locking", "Polymorphic Logic", "Model Events"]
+    },
+    {
+        id: "17",
+        name: "Makhzon API",
+        desc: {
+            en: "A comprehensive and professional Backend system for warehouse and inventory management. This project serves as the 'engine' for any web or mobile application aimed at sales and inventory management, providing a precise and fast RESTful API for data handling.\n\nThe system manages the complete product lifecycle: from defining categories and suppliers, to adding products, then recording supply and dispatch transactions, and finally generating financial and inventory reports.\n\nKey Features:\n• Authentication System: Secure login and logout using Tokens (Sanctum).\n• Profile Management: Update employee data and change passwords.\n• Smart Products: Add products, quick search, filter by categories, and low-stock alerts.\n• Transactions Engine: No manual quantity adjustments for security. Quantities automatically increase/decrease based on 'In' (Supply) and 'Out' (Dispatch) transactions.\n• Dashboard: Displays total inventory value, product count, and shortage alerts for managers.\n• Reports (Excel Export): Export complete warehouse inventory with a single click in Excel format.",
+            ar: "نظام خلفي (Backend) متكامل واحترافي لإدارة المستودعات وحركات المخزون. تم بناء هذا المشروع ليكون 'المحرك' لأي تطبيق ويب أو جوال يهدف لإدارة المبيعات والمخزون، حيث يوفر واجهة برمجية (RESTful API) دقيقة وسريعة للتعامل مع البيانات.\n\nيقوم النظام بإدارة دورة حياة المنتج كاملة: من تعريف الأقسام والموردين، إلى إضافة المنتجات، ثم تسجيل عمليات التوريد والصرف، وأخيراً استخراج التقارير المالية والجردية.\n\nأبرز المميزات التقنية:\n• نظام حماية متكامل (Authentication): تسجيل دخول وخروج آمن باستخدام Tokens (Sanctum).\n• إدارة الملف الشخصي (Profile Management): إمكانية تحديث بيانات الموظف وتغيير كلمة المرور.\n• إدارة المنتجات الذكية (Smart Products): إضافة منتجات، بحث سريع، فلترة حسب الأقسام، وتنبيهات عند انخفاض الكمية.\n• محرك الحركات (Transactions Engine): لا يتم تعديل الكميات يدوياً لضمان الأمان. الكميات تزيد وتنقص تلقائياً بناءً على حركات 'التوريد' (In) و 'الصرف' (Out).\n• لوحة تحكم (Dashboard): تعرض للمدير إجمالي قيمة المخزون، عدد المنتجات، وتنبيهات النواقص.\n• التقارير (Excel Export): تصدير جرد كامل للمستودع بضغطة زر بصيغة Excel."
+        },
+        url: "https://github.com/Su03l/Laravel-projects/tree/main/Makhzon",
+        icon: "fa-warehouse",
+        tech: ["Laravel 11", "PHP 8.2+", "SQLite", "Laravel Sanctum", "Maatwebsite Excel", "RESTful API", "API Resources"]
     }
 ];
 
