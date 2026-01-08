@@ -638,6 +638,17 @@ export const LARAVEL_COLLECTION_ITEMS = [
         url: "https://github.com/Su03l/Laravel-projects/tree/main/Makhzon",
         icon: "fa-warehouse",
         tech: ["Laravel 11", "PHP 8.2+", "SQLite", "Laravel Sanctum", "Maatwebsite Excel", "RESTful API", "API Resources"]
+    },
+    {
+        id: "18",
+        name: "Nuzul API",
+        desc: {
+            en: "A professional Backend system for booking residential units (chalets, resorts, camps). It simulates the logic of global applications like Airbnb and Gathern, connecting Hosts and Guests with intelligent date and pricing management.\n\nKey Features:\n• Flexible User System: Single account can work as Host (rents properties) and Guest (rents from others). Profile management (photo, phone, bio).\n• Availability Engine: Smart algorithm prevents booking conflicts (Double Booking Protection). Blocks reservations if dates conflict even by one day.\n• Smart Search: Search for available chalets within specific date ranges. System automatically excludes booked properties from results.\n• Cancellation Policy: 48+ hours before: Guests can modify dates or cancel for free. Less than 48 hours: System locks modifications to protect Host rights.",
+            ar: "نظام خلفي (Backend) احترافي لحجز الوحدات السكنية (شاليهات، استراحات، مخيمات). يحاكي منطق عمل التطبيقات العالمية مثل Airbnb و Gathern، حيث يربط بين المضيفين (Hosts) والضيوف (Guests) مع إدارة ذكية جداً للتواريخ والأسعار.\n\nأبرز المميزات:\n• نظام مستخدمين مرن: حساب واحد يمكنه العمل كمضيف (يؤجر عقاراته) وكضيف (يستأجر عقارات الآخرين). إدارة الملف الشخصي (تحديث الصورة، الجوال، النبذة).\n• محرك التوافر (Availability Engine): خوارزمية ذكية تمنع تداخل الحجوزات (Double Booking Protection). لا يسمح بالحجز إذا كان التاريخ يتعارض ولو ليوم واحد مع حجز سابق.\n• البحث المتقدم (Smart Search): البحث عن الشاليهات المتاحة في نطاق زمني محدد. يقوم النظام باستبعاد الشاليهات المحجوزة تلقائياً من نتائج البحث.\n• سياسة الإلغاء والتعديل: قبل 48 ساعة يسمح للضيف بتعديل التواريخ أو إلغاء الحجز مجاناً. أقل من 48 ساعة يغلق النظام إمكانية التعديل والإلغاء لضمان حق المضيف."
+        },
+        url: "https://github.com/Su03l/Laravel-projects/tree/main/nuzul-API",
+        icon: "fa-home",
+        tech: ["Laravel 11", "PHP 8.2+", "SQLite", "Laravel Sanctum", "Carbon", "API Resources"]
     }
 ];
 
