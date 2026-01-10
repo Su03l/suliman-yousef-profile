@@ -649,6 +649,17 @@ export const LARAVEL_COLLECTION_ITEMS = [
         url: "https://github.com/Su03l/Laravel-projects/tree/main/nuzul-API",
         icon: "fa-home",
         tech: ["Laravel 11", "PHP 8.2+", "SQLite", "Laravel Sanctum", "Carbon", "API Resources"]
+    },
+    {
+        id: "19",
+        name: "Task Manager API",
+        desc: {
+            en: "A comprehensive RESTful API built with Laravel Framework, designed to simulate real-world production environments. Users can register, create their own 'projects', and within each project add multiple 'tasks' with image uploads, data filtering and sorting, all within a secure environment ensuring complete data privacy.\n\nKey Features:\n• Authentication System: Secure login using Laravel Sanctum with email or username support and safe token-based logout.\n• Strict Authorization Policies: Users cannot view, edit, or delete projects or tasks they don't own using Laravel Policies.\n• Media Library: Image upload support linked to tasks using Spatie Media Library with automatic URL generation.\n• Advanced Filtering: Search tasks by title, status, priority, or project with sorting by date or priority using Spatie Query Builder.\n• Smart Automation (Observers): Auto-creation of demo project with tutorial tasks for new users (Onboarding).\n• High Performance: Utilizing API Resources for consistent JSON output and Pagination to prevent server overload.",
+            ar: "واجهة برمجية متكاملة (RESTful API) مبنية باستخدام إطار عمل Laravel. النظام مصمم ليحاكي بيئة العمل الحقيقية في الشركات (Production Ready)، حيث يتيح للمستخدمين التسجيل وإنشاء 'مشاريع' خاصة بهم، وداخل كل مشروع يمكنهم إضافة 'مهام' متعددة، مع إمكانية رفع الصور للمهام، وفلترة البيانات وترتيبها، كل ذلك ضمن بيئة آمنة تضمن خصوصية بيانات كل مستخدم.\n\nأبرز المميزات:\n• نظام حماية ومصادقة: استخدام Laravel Sanctum لإدارة الرموز مع دعم الدخول بالبريد الإلكتروني أو اسم المستخدم وتسجيل خروج آمن.\n• سياسات أمان صارمة: لا يمكن لأي مستخدم رؤية أو تعديل أو حذف مشاريع أو مهام لا يملكها باستخدام Laravel Policies.\n• إدارة المرفقات والوسائط: دعم رفع الصور وربطها بالمهام باستخدام Spatie Media Library مع عرض روابطها تلقائياً.\n• فلترة وبحث ذكي: البحث عن المهام حسب العنوان، الحالة، الأولوية، أو المشروع مع ترتيب النتائج باستخدام Spatie Query Builder.\n• الأتمتة الذكية (Observers): إنشاء تلقائي لمشروع تجريبي يحتوي على مهام تعليمية للمستخدمين الجدد.\n• أداء عالي: استخدام API Resources لتنسيق البيانات و Pagination لتقسيم النتائج."
+        },
+        url: "https://github.com/Su03l/Laravel-projects/tree/main/task_manager",
+        icon: "fa-tasks",
+        tech: ["Laravel", "PHP", "SQLite", "Laravel Sanctum", "Spatie Media Library", "Spatie Query Builder", "API Resources"]
     }
 ];
 
