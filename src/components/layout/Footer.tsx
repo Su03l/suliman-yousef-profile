@@ -73,8 +73,8 @@ const Footer: React.FC<FooterProps> = ({ t, theme }) => {
                         <ul className={`space-y-6 text-base ${isDark ? 'text-white/50' : 'text-slate-600'} font-medium`}>
                             {[
                                 { icon: 'fab fa-twitter', text: '@su05l', href: 'https://twitter.com/su05l' },
-                                { icon: 'fas fa-envelope', text: 'sulimany662@gmail.com', href: 'mailto:sulimany662@gmail.com' },
-                                { icon: 'fas fa-phone', text: '+966 59 012 8804', href: 'tel:+966590128804' },
+                                { icon: 'fas fa-envelope', text: 'sulimanyousef1478@outlook.sa', href: 'mailto:sulimanyousef1478@outlook.sa' },
+                                { icon: 'fas fa-phone', text: '+966 53 160 8085', href: 'tel:+966531608085' },
                                 { icon: 'fas fa-map-marker-alt', text: 'Medina - Saudi Arabia' }
                             ].map((item, i) => (
                                 <li key={i} className="flex items-center gap-5 group">
